@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="7_de_julio_(ampl)" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>7_de_julio_(ampl)</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle008">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>3214786E</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+      <fill>1</fill>
+			<color>64147846</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>7_de_julio_(ampl)</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>7 DE JULIO (AMPL)</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>7 DE JULIO (AMPL)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>7 DE JULIO (AMPL)</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-071</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5315, 5316</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle008</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.1083732613761,19.43532814288196,0 -99.10843075991323,19.43527752154901,0 -99.10852800541005,19.43519190714168,0 -99.10856665435523,19.43515788078074,0 -99.10908922132592,19.43481172669586,0 -99.10934728115292,19.43466289630777,0 -99.10951620169527,19.43456210104421,0 -99.10962612042673,19.4341290981675,0 -99.10963948626105,19.43408820169077,0 -99.10965824827709,19.43402939567864,0 -99.10966712815018,19.43400280785117,0 -99.10967956074823,19.43396558255492,0 -99.10969283208294,19.43392274541008,0 -99.10970470821108,19.43388819620066,0 -99.10974103933307,19.43377513061702,0 -99.10976930129938,19.43368742891015,0 -99.10978855800529,19.43363433996634,0 -99.10980914870955,19.43357757327306,0 -99.10982809929898,19.43352186708586,0 -99.10984432786142,19.43347224033465,0 -99.10988228966993,19.43335857544356,0 -99.11010362712347,19.43226391623563,0 -99.11041510580181,19.43119306604436,0 -99.11055390126286,19.43037857112159,0 -99.11060548415496,19.42934934451034,0 -99.11054875237797,19.42902019894116,0 -99.11072813331417,19.42785572154584,0 -99.11071277331848,19.42762560714837,0 -99.11036355446079,19.42741415731006,0 -99.1103145466096,19.42738494386852,0 -99.110266621454,19.42735603473671,0 -99.1102480066082,19.42743049429101,0 -99.11024186065563,19.42745544533383,0 -99.1101756483047,19.42772425055786,0 -99.10991693243416,19.42882891784375,0 -99.10968510762559,19.43038313693937,0 -99.10957793016689,19.43084384265261,0 -99.1093898300732,19.43189497593804,0 -99.10935328106841,19.43215892922211,0 -99.10909368993278,19.43339569604084,0 -99.1090359054288,19.4339052114368,0 -99.10903253058984,19.43393496901291,0 -99.10902539963428,19.43399562672208,0 -99.1090195419149,19.43404949629916,0 -99.109011894764,19.43411917868387,0 -99.10900508632902,19.43418121847007,0 -99.10900118459297,19.43421761687304,0 -99.10899863062399,19.43424016837708,0 -99.10899485706513,19.43427086664767,0 -99.10899033357356,19.43430766567929,0 -99.10898597670845,19.43435948759515,0 -99.10810077445916,19.43472604823137,0 -99.10828558545234,19.43513441226537,0 -99.1083732613761,19.43532814288196,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

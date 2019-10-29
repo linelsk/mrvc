@@ -1,0 +1,774 @@
+<div class="col-xs-12">
+  <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }"></ngx-loading>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav [mode]="mode.value">
+      <div class="container" style="padding:20px 50px 10px 50px;">
+        <h3>
+          Buscar en mapa
+        </h3>
+        <br />
+        <mat-accordion>
+          <!--<mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Serivicios
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-checkbox [(ngModel)]="chk_1" color="primary" (change)="filtros($event, 1, 'assets/img/icon_maps/1.png')">1. Servicios de alojamiento temporal y preparación<br />de alimentos y bebidas</mat-checkbox>
+            <br />
+            <mat-checkbox [(ngModel)]="chk_2" color="primary" (change)="filtros($event, 2, 'assets/img/icon_maps/2.png')">2. Servicios de esparcimiento culturales y deportivos,<br />y otros servicios recreativos</mat-checkbox>
+            <br />
+          </mat-expansion-panel>-->
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-checkbox [(ngModel)]="chk_infra" color="primary"><b>Infraestructura</b></mat-checkbox>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-checkbox [(ngModel)]="chk_gas" color="primary">Gas natural</mat-checkbox>
+            <br />
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Servicios de alojamiento temporal y preparación<br /> de alimentos y bebidas</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_4" color="primary" (change)="filtros($event, 4, 'assets/img/icon_maps/4.png')">Cafeterías fuentes de sodas y neverías</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_5" color="primary" (change)="filtros($event, 5, 'assets/img/icon_maps/5.png')">Cantinas, bares, discotecas y similares</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_6" color="primary" (change)="filtros($event, 6, 'assets/img/icon_maps/6.png')">Hoteles, Moteles y Casas de Huéspedes</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_7" color="primary" (change)="filtros($event, 7, 'assets/img/icon_maps/7.png')">Restaurantes de Autoservicio</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_8" color="primary" (change)="filtros($event, 8, 'assets/img/icon_maps/8.png')">Restaurantes de comida corrida o a la carta</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_9" color="primary" (change)="filtros($event, 9, 'assets/img/icon_maps/9.png')">Restaurantes con servicios de preparación de antojitos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_10" color="primary" (change)="filtros($event, 10, 'assets/img/icon_maps/10.png')">Restaurantes con servicio de preparación de otros<br /> alimentos para llevar</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_11" color="primary" (change)="filtros($event, 11, 'assets/img/icon_maps/11.png')">Restaurantes con preparación de pescados y mariscos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_12" color="primary" (change)="filtros($event, 12, 'assets/img/icon_maps/12.png')">Restaurantes con preparación de tacos o tortas</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_13" color="primary" (change)="filtros($event, 13, 'assets/img/icon_maps/13.png')">Servicios de comedor para empresas e instituciones</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_14" color="primary" (change)="filtros($event, 14, 'assets/img/icon_maps/13.png')">Servicio de preparación de alimentos para ocasiones <br /> especiales</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_15" color="primary" (change)="filtros($event, 15, 'assets/img/icon_maps/13.png')">Servicio de preparación de otros alimentos de consumo <br /> inmediato</mat-checkbox>
+              <br />
+            </mat-expansion-panel>
+            <br />
+            <mat-checkbox [(ngModel)]="chk_16" color="primary" (change)="filtros($event, 16, 'assets/img/icon_maps/serv_rem.png')">Servicios de apoyo a los negocios y manejo de desechos <br />y servicios de remediación</mat-checkbox>
+            <br />
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Servicios de esparcimiento culturales y deportivos, <br /> y otros servicios recreativos</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_17" color="primary" (change)="filtros($event, 17, 'assets/img/icon_maps/17.png')">Artistas escritores independientes</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_18" color="primary" (change)="filtros($event, 18, 'assets/img/icon_maps/18.png')">Billares</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_19" color="primary" (change)="filtros($event, 19, 'assets/img/icon_maps/19.png')">Casas de juegos electrónicos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_20" color="primary" (change)="filtros($event, 20, 'assets/img/icon_maps/20.png')">Centros de acondicionamiento físico público</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_21" color="primary" (change)="filtros($event, 21, 'assets/img/icon_maps/21.png')">Centros de acondicionamiento físico privado</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_22" color="primary" (change)="filtros($event, 22, 'assets/img/icon_maps/22.png')">Clubes deportivos del sector privado </mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_23" color="primary" (change)="filtros($event, 23, 'assets/img/icon_maps/23.png')">Clubes o ligas de aficionados</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_24" color="primary" (change)="filtros($event, 24, 'assets/img/icon_maps/24.png')">Compañía de teatro sector público</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_25" color="primary" (change)="filtros($event, 25, 'assets/img/icon_maps/25.png')">Equipos deportivos profesionales</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_26" color="primary" (change)="filtros($event, 26, 'assets/img/icon_maps/26.png')">Otros servicios de esparcimiento</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_27" color="primary" (change)="filtros($event, 27, 'assets/img/icon_maps/27.png')">Parques de diversiones sector privado</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_28" color="primary" (change)="filtros($event, 28, 'assets/img/icon_maps/28.png')">Parques de diversiones sector público</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_29" color="primary" (change)="filtros($event, 29, 'assets/img/icon_maps/29.png')">Promotores de espectáculo sector privado</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_30" color="primary" (change)="filtros($event, 30, 'assets/img/icon_maps/30.png')">Promotores de espectáculo sector público</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_31" color="primary" (change)="filtros($event, 31, 'assets/img/icon_maps/31.jpg')">Venta de billetes de lotería</mat-checkbox>
+              <br />
+            </mat-expansion-panel>
+            <br />
+            <mat-checkbox [(ngModel)]="chk_32" color="primary" (change)="filtros($event, 32, 'assets/img/icon_maps/32.png')">Servicio de Transportes, correos y almacenamiento</mat-checkbox>
+            <br />
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-checkbox [(ngModel)]="chk_vitales" color="primary"><b>Instalaciones de servicios vitales y sistemas estratégicos</b></mat-checkbox>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-checkbox [(ngModel)]="chk_33" color="primary" (change)="filtros($event, 33, 'assets/img/icon_maps/33.png')">Actividades legislativas, gubernamentales, de impartición de <br /> justicia y de organismos internacionales y extraterritoriales</mat-checkbox>
+            <br />
+            <mat-checkbox [(ngModel)]="chk_34" color="primary" (change)="filtros($event, 34, 'assets/img/icon_maps/34.png')">Centro de acopio sugeridos </mat-checkbox>
+            <br />
+            <mat-checkbox [(ngModel)]="chk_35" color="primary" (change)="filtros($event, 35, 'assets/img/icon_maps/35.png')">Refugios Temporales en Caso de Desastre</mat-checkbox>
+            <br />
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Servicios de salud y de asistencia social</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_36" color="primary" (change)="filtros($event, 36, 'assets/img/icon_maps/36.png')">Agrupaciones de autoayuda y adicciones</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_37" color="primary" (change)="filtros($event, 37, 'assets/img/icon_maps/37.png')">Centros privados de atención a ancianos </mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_38" color="primary" (change)="filtros($event, 38, 'assets/img/icon_maps/38.png')">Centros públicos de atención a ancianos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_39" color="primary" (change)="filtros($event, 39, 'assets/img/icon_maps/39.png')">Clínicas y consultorios privados</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_40" color="primary" (change)="filtros($event, 40, 'assets/img/icon_maps/40.png')">Clínicas y consultorios públicos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_41" color="primary" (change)="filtros($event, 41, 'assets/img/icon_maps/41.png')">Guarderías privadas</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_42" color="primary" (change)="filtros($event, 42, 'assets/img/icon_maps/42.png')">Guarderías públicas</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_43" color="primary" (change)="filtros($event, 43, 'assets/img/icon_maps/43.png')">Hospitales privados</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_44" color="primary" (change)="filtros($event, 44, 'assets/img/icon_maps/44.png')">Hospitales públicos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_45" color="primary" (change)="filtros($event, 45, 'assets/img/icon_maps/45.png')">Laboratorios privados</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_46" color="primary" (change)="filtros($event, 46, 'assets/img/icon_maps/46.png')">Laboratorios públicos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_47" color="primary" (change)="filtros($event, 47, 'assets/img/icon_maps/47.png')">Orfanatos y casas de asistencia social privados</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_48" color="primary" (change)="filtros($event, 48, 'assets/img/icon_maps/48.png')">Otros consultorios públicos y privados</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_49" color="primary" (change)="filtros($event, 49, 'assets/img/icon_maps/49.png')">Residencias para personas con retardo mental</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_50" color="primary" (change)="filtros($event, 50, 'assets/img/icon_maps/50.png')">Servicios de alimentación comunitaria públicos y privados</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_51" color="primary" (change)="filtros($event, 51, 'assets/img/icon_maps/51.png')">Servicios de capacitación para el trabajo</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_52" color="primary" (change)="filtros($event, 52, 'assets/img/icon_maps/52.png')">Servicios de orientación a la niñez y juventud</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_53" color="primary" (change)="filtros($event, 53, 'assets/img/icon_maps/53.png')">Servicios de ambulancia</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_54" color="primary" (change)="filtros($event, 54, 'assets/img/icon_maps/54.png')">Servicios de enfermería</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_55" color="primary" (change)="filtros($event, 55, 'assets/img/icon_maps/55.png')">Servicios de orientación pública y privada</mat-checkbox>
+              <br />
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Servicios educativos</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_56" color="primary" (change)="filtros($event, 56, 'assets/img/icon_maps/56.png')">Escuelas comerciales secretariales</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_57" color="primary" (change)="filtros($event, 57, 'assets/img/icon_maps/57.png')">Escuelas de arte </mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_58" color="primary" (change)="filtros($event, 58, 'assets/img/icon_maps/58.png')">Escuelas de deporte</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_59" color="primary" (change)="filtros($event, 59, 'assets/img/icon_maps/59.png')">Escuelas de educación preescolar</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_60" color="primary" (change)="filtros($event, 60, 'assets/img/icon_maps/60.png')">Escuelas de educación primaria</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_61" color="primary" (change)="filtros($event, 61, 'assets/img/icon_maps/61.png')">Escuelas de educación secundaria</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_62" color="primary" (change)="filtros($event, 62, 'assets/img/icon_maps/62.png')">Escuelas de educación superior y técnica</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_63" color="primary" (change)="filtros($event, 63, 'assets/img/icon_maps/63.png')">Escuelas de educación media superior</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_64" color="primary" (change)="filtros($event, 64, 'assets/img/icon_maps/64.png')">Escuela de idiomas </mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_65" color="primary" (change)="filtros($event, 65, 'assets/img/icon_maps/65.png')">Otros servicios educativos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_66" color="primary" (change)="filtros($event, 66, 'assets/img/icon_maps/66.png')">Servicios educativos especiales</mat-checkbox>
+              <br />
+            </mat-expansion-panel>
+          </mat-expansion-panel>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-checkbox [(ngModel)]="chk_fen_per" color="primary"><b>Fenómenos perturbadores</b></mat-checkbox>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Fenómenos geológicos</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_67" color="primary" (change)="filtros($event, 67, 'assets/img/icon_maps/67.png')">Atlas de Riesgo sísmico</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_68" color="primary" (change)="filtros($event, 68, 'assets/img/icon_maps/68.png')">Atlas de Riesgo susceptibilidad por laderas </mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_69" color="primary" (change)="filtros($event, 69, 'assets/img/icon_maps/69.png')">Atlas de Riesgo vulnerabilidad social fracturas de suelo</mat-checkbox>
+              <br />
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Vulnerabilidad al fracturamiento</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_fracturamiento" color="primary">Fracturamiento</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_geofisicos" color="primary">Sitios de estudios geofísicos</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_hundimiento" color="primary">Sitios de fracturamiento o hundimiento</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_vul_fracturamiento" color="primary">Vulnerabilidad física al fracturamiento</mat-checkbox>
+                <br />
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Zonificación geotécnica</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_lomas" color="primary">Zona 1 (Lomas)</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_transicion" color="primary">Zona 2 (Transición)</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_lacustre" color="primary">Zona 3 (Lacustre)</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_vc" color="primary">Venustiano Carranza</mat-checkbox>
+                <br />
+              </mat-expansion-panel>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Fenómenos Hidrometeorológico</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_78" color="primary" (change)="filtros($event, 78, 'assets/img/icon_maps/78.png')">Atlas de Riesgo granizo</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_79" color="primary" (change)="filtros($event, 79, 'assets/img/icon_maps/79.png')">Atlas de Riesgo de inundaciones </mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_80" color="primary" (change)="filtros($event, 80, 'assets/img/icon_maps/precipitacion.png')">Atlas de Riesgo de precipitación</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_81" color="primary" (change)="filtros($event, 81, 'assets/img/icon_maps/81.png')">Atlas de Riesgo temperaturas máximas</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_82" color="primary" (change)="filtros($event, 82, 'assets/img/icon_maps/82.png')">Atlas de Riesgo temperaturas mínimas</mat-checkbox>
+              <br />
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Fenómenos Químicos –Tecnológicos</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Uso de suelo</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_83" color="primary" (change)="filtros($event, 83, 'assets/img/icon_maps/83.png')">Áreas verdes</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_84" color="primary" (change)="filtros($event, 84, 'assets/img/icon_maps/84.png')">Centro de Barrio </mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_85" color="primary" (change)="filtros($event, 85, 'assets/img/icon_maps/85.png')">Equipamiento</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_86" color="primary" (change)="filtros($event, 86, 'assets/img/icon_maps/86.png')">Espacios abiertos</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_87" color="primary" (change)="filtros($event, 87, 'assets/img/icon_maps/87.png')">Habitacional con comercio en planta baja</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_88" color="primary" (change)="filtros($event, 88, 'assets/img/icon_maps/88.png')">Habitacional con comercio</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_89" color="primary" (change)="filtros($event, 89, 'assets/img/icon_maps/89.png')">Habitacional con oficinas</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_90" color="primary" (change)="filtros($event, 90, 'assets/img/icon_maps/90.png')">Habitacional mixto</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_91" color="primary" (change)="filtros($event, 91, 'assets/img/icon_maps/91.png')">Habitacional</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_92" color="primary" (change)="filtros($event, 92, 'assets/img/icon_maps/92.png')">Industrial</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_93" color="primary" (change)="filtros($event, 93, 'assets/img/icon_maps/93.png')">Sin zonificación</mat-checkbox>
+                <br />
+              </mat-expansion-panel>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_94" color="primary" (change)="filtros($event, 94, 'assets/img/icon_maps/94.png')">Almacenamiento y Acopio de residuos peligrosos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_95" color="primary" (change)="filtros($event, 95, 'assets/img/icon_maps/95.png')">Recolección y Transporte de residuos peligrosos </mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_96" color="primary" (change)="filtros($event, 96, 'assets/img/icon_maps/96.png')">Tratamiento de residuos patológicos biológicos infecciosos ex situ</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_97" color="primary" (change)="filtros($event, 97, 'assets/img/icon_maps/97.png')">Tratamiento de residuos patológicos biológicos infecciosos in situ</mat-checkbox>
+              <br />
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Fenómenos Sanitario –Ecológicos</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Servicios de alojamiento temporal y preparación<br /> de alimentos y bebidas</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_98" color="primary" (change)="filtros($event, 98, 'assets/img/icon_maps/4.png')">Cafeterías fuentes de sodas y neverías</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_99" color="primary" (change)="filtros($event, 99, 'assets/img/icon_maps/5.png')">Cantinas, bares, discotecas y similares</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_100" color="primary" (change)="filtros($event, 100, 'assets/img/icon_maps/6.png')">Hoteles, Moteles y Casas de Huéspedes</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_101" color="primary" (change)="filtros($event, 101, 'assets/img/icon_maps/7.png')">Restaurantes de Autoservicio</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_102" color="primary" (change)="filtros($event, 102, 'assets/img/icon_maps/8.png')">Restaurantes de comida corrida o a la carta</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_103" color="primary" (change)="filtros($event, 103, 'assets/img/icon_maps/9.png')">Restaurantes con servicios de preparación de antojitos</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_104" color="primary" (change)="filtros($event, 104, 'assets/img/icon_maps/10.png')">Restaurantes con servicio de preparación de otros<br /> alimentos para llevar</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_105" color="primary" (change)="filtros($event, 105, 'assets/img/icon_maps/11.png')">Restaurantes con preparación de pescados y mariscos</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_106" color="primary" (change)="filtros($event, 106, 'assets/img/icon_maps/12.png')">Restaurantes con preparación de tacos o tortas</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_107" color="primary" (change)="filtros($event, 107, 'assets/img/icon_maps/13.png')">Servicios de comedor para empresas e instituciones</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_108" color="primary" (change)="filtros($event, 108, 'assets/img/icon_maps/13.png')">Servicio de preparación de alimentos para ocasiones <br /> especiales</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_109" color="primary" (change)="filtros($event, 109, 'assets/img/icon_maps/13.png')">Servicio de preparación de otros alimentos de consumo <br /> inmediato</mat-checkbox>
+                <br />
+              </mat-expansion-panel>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Fenómenos Socio –Organizativos</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_110" color="primary" (change)="filtros($event, 110, 'assets/img/icon_maps/110.png')">Atlas de índice de vulnerabilidad social</mat-checkbox>
+              <br />
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Carpetas de investigación PGJ</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2017</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_111" color="primary" (change)="filtros($event, 116, 'assets/img/icon_maps/111.png')">Delito bajo impacto</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_112" color="primary" (change)="filtros($event, 117, 'assets/img/icon_maps/112.png')">Hecho no delictivo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_113" color="primary" (change)="filtros($event, 118, 'assets/img/icon_maps/113.png')">Homicidio doloso</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_114" color="primary" (change)="filtros($event, 119, 'assets/img/icon_maps/114.png')">Lesiones dolosas</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_115" color="primary" (change)="filtros($event, 120, 'assets/img/icon_maps/115.png')">Robo a casa habitación</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_116" color="primary" (change)="filtros($event, 121, 'assets/img/icon_maps/116.png')">Robo a cuentahabiente</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_117" color="primary" (change)="filtros($event, 122, 'assets/img/icon_maps/117.png')">Robo a negocio</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_118" color="primary" (change)="filtros($event, 123, 'assets/img/icon_maps/118.png')">Robo a pasajero</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_119" color="primary" (change)="filtros($event, 124, 'assets/img/icon_maps/119.png')">Robo a repartidor</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_120" color="primary" (change)="filtros($event, 125, 'assets/img/icon_maps/120.png')">Robo a transeúnte</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_121" color="primary" (change)="filtros($event, 126, 'assets/img/icon_maps/121.png')">Robo a transportista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_122" color="primary" (change)="filtros($event, 127, 'assets/img/icon_maps/122.png')">Robo a vehículo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_123" color="primary" (change)="filtros($event, 128, 'assets/img/icon_maps/123.png')">Secuestro</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_124" color="primary" (change)="filtros($event, 129, 'assets/img/icon_maps/124.png')">Violación</mat-checkbox><br />
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2018</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_125" color="primary" (change)="filtros($event, 130, 'assets/img/icon_maps/125.png')">Delito bajo impacto</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_126" color="primary" (change)="filtros($event, 131, 'assets/img/icon_maps/126.png')">Hecho no delictivo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_127" color="primary" (change)="filtros($event, 132, 'assets/img/icon_maps/127.png')">Homicidio doloso</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_128" color="primary" (change)="filtros($event, 133, 'assets/img/icon_maps/128.png')">Lesiones dolosas</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_129" color="primary" (change)="filtros($event, 134, 'assets/img/icon_maps/129.png')">Robo a casa habitación</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_130" color="primary" (change)="filtros($event, 135, 'assets/img/icon_maps/130.png')">Robo a cuentahabiente</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_131" color="primary" (change)="filtros($event, 136, 'assets/img/icon_maps/131.png')">Robo a negocio</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_132" color="primary" (change)="filtros($event, 137, 'assets/img/icon_maps/132.png')">Robo a pasajero</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_133" color="primary" (change)="filtros($event, 138, 'assets/img/icon_maps/133.png')">Robo a repartidor</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_134" color="primary" (change)="filtros($event, 139, 'assets/img/icon_maps/134.png')">Robo a transeúnte</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_135" color="primary" (change)="filtros($event, 140, 'assets/img/icon_maps/135.png')">Robo a transportista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_136" color="primary" (change)="filtros($event, 141, 'assets/img/icon_maps/136.png')">Robo a vehículo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_137" color="primary" (change)="filtros($event, 142, 'assets/img/icon_maps/137.png')">Violación</mat-checkbox><br />
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2019</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_138" color="primary" (change)="filtros($event, 143, 'assets/img/icon_maps/138.png')">Delito bajo impacto</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_139" color="primary" (change)="filtros($event, 144, 'assets/img/icon_maps/139.png')">Hecho no delictivo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_140" color="primary" (change)="filtros($event, 145, 'assets/img/icon_maps/140.png')">Homicidio doloso</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_141" color="primary" (change)="filtros($event, 146, 'assets/img/icon_maps/141.png')">Lesiones dolosas</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_142" color="primary" (change)="filtros($event, 147, 'assets/img/icon_maps/142.png')">Robo a casa habitación</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_143" color="primary" (change)="filtros($event, 148, 'assets/img/icon_maps/143.png')">Robo a cuentahabiente</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_144" color="primary" (change)="filtros($event, 149, 'assets/img/icon_maps/144.png')">Robo a negocio</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_145" color="primary" (change)="filtros($event, 150, 'assets/img/icon_maps/145.png')">Robo a pasajero</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_146" color="primary" (change)="filtros($event, 151, 'assets/img/icon_maps/146.png')">Robo a repartidor</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_147" color="primary" (change)="filtros($event, 152, 'assets/img/icon_maps/147.png')">Robo a transeúnte</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_148" color="primary" (change)="filtros($event, 153, 'assets/img/icon_maps/148.png')">Robo a transportista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_149" color="primary" (change)="filtros($event, 154, 'assets/img/icon_maps/149.png')">Robo a vehículo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_150" color="primary" (change)="filtros($event, 155, 'assets/img/icon_maps/150.png')">Secuestro</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_151" color="primary" (change)="filtros($event, 156, 'assets/img/icon_maps/151.png')">Violación</mat-checkbox><br />
+                </mat-expansion-panel>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b> Denuncias-víctimas-PGJ</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2017</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_152" color="primary" (change)="filtros($event, 157, 'assets/img/icon_maps/152.png')">Abuso sexual</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_153" color="primary" (change)="filtros($event, 158, 'assets/img/icon_maps/153.png')">Amenazas</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_154" color="primary" (change)="filtros($event, 159, 'assets/img/icon_maps/154.png')">Cobranza ilegítima</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_155" color="primary" (change)="filtros($event, 160, 'assets/img/icon_maps/155.png')">Corrupción de menores</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_156" color="primary" (change)="filtros($event, 161, 'assets/img/icon_maps/156.png')">Despojo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_157" color="primary" (change)="filtros($event, 162, 'assets/img/icon_maps/157.png')">Extorsión</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_158" color="primary" (change)="filtros($event, 163, 'assets/img/icon_maps/158.png')">Fraude</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_159" color="primary" (change)="filtros($event, 164, 'assets/img/icon_maps/159.png')">Robo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_160" color="primary" (change)="filtros($event, 165, 'assets/img/icon_maps/160.png')">Usurpación de identidad</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_161" color="primary" (change)="filtros($event, 166, 'assets/img/icon_maps/161.png')">Violación</mat-checkbox><br />
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2018</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_162" color="primary" (change)="filtros($event, 167, 'assets/img/icon_maps/162.png')">Abuso sexual</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_163" color="primary" (change)="filtros($event, 168, 'assets/img/icon_maps/163.png')">Daño en propiedad ajena</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_164" color="primary" (change)="filtros($event, 169, 'assets/img/icon_maps/164.png')">Delito bajo impacto</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_165" color="primary" (change)="filtros($event, 170, 'assets/img/icon_maps/165.png')">Denuncia de hechos</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_166" color="primary" (change)="filtros($event, 171, 'assets/img/icon_maps/166.png')">Hecho no delictivo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_167" color="primary" (change)="filtros($event, 172, 'assets/img/icon_maps/167.png')">Homicidio</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_168" color="primary" (change)="filtros($event, 173, 'assets/img/icon_maps/168.png')">Lesiones culposas</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_169" color="primary" (change)="filtros($event, 174, 'assets/img/icon_maps/169.png')">Lesiones dolosas</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_170" color="primary" (change)="filtros($event, 175, 'assets/img/icon_maps/170.png')">Narcomenudeo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_171" color="primary" (change)="filtros($event, 176, 'assets/img/icon_maps/171.png')">Otros delitos</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_172" color="primary" (change)="filtros($event, 177, 'assets/img/icon_maps/172.png')">Otros robos</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_173" color="primary" (change)="filtros($event, 178, 'assets/img/icon_maps/173.png')">Robo a casa habitación</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_174" color="primary" (change)="filtros($event, 179, 'assets/img/icon_maps/174.png')">Robo a negocio</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_175" color="primary" (change)="filtros($event, 180, 'assets/img/icon_maps/175.png')">Robo a repartidor</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_176" color="primary" (change)="filtros($event, 181, 'assets/img/icon_maps/176.png')">Robo a transeúnte</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_177" color="primary" (change)="filtros($event, 182, 'assets/img/icon_maps/177.png')">Robo a transportista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_178" color="primary" (change)="filtros($event, 183, 'assets/img/icon_maps/178.png')">Robo a vehículo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_179" color="primary" (change)="filtros($event, 184, 'assets/img/icon_maps/179.png')">Violación</mat-checkbox><br />
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2019</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_180" color="primary" (change)="filtros($event, 185, 'assets/img/icon_maps/180.png')">Abuso sexual</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_181" color="primary" (change)="filtros($event, 186, 'assets/img/icon_maps/181.png')">Daño en propiedad ajena</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_182" color="primary" (change)="filtros($event, 187, 'assets/img/icon_maps/182.png')">Delito bajo impacto</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_183" color="primary" (change)="filtros($event, 188, 'assets/img/icon_maps/183.png')">Denuncia de hechos</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_184" color="primary" (change)="filtros($event, 189, 'assets/img/icon_maps/184.png')">Hecho no delictivo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_185" color="primary" (change)="filtros($event, 190, 'assets/img/icon_maps/185.png')">Homicidio</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_186" color="primary" (change)="filtros($event, 191, 'assets/img/icon_maps/186.png')">Lesiones</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_187" color="primary" (change)="filtros($event, 192, 'assets/img/icon_maps/187.png')">Muerte por causa no delictiva</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_188" color="primary" (change)="filtros($event, 193, 'assets/img/icon_maps/188.png')">Narcomenudeo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_189" color="primary" (change)="filtros($event, 194, 'assets/img/icon_maps/189.png')">Otros delitos</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_190" color="primary" (change)="filtros($event, 195, 'assets/img/icon_maps/190.png')">Otros delitos sexuales</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_191" color="primary" (change)="filtros($event, 196, 'assets/img/icon_maps/191.png')">Otros homicidios dolosos</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_192" color="primary" (change)="filtros($event, 197, 'assets/img/icon_maps/192.png')">Otros robos sin violencia</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_193" color="primary" (change)="filtros($event, 198, 'assets/img/icon_maps/193.png')">Robo a casa habitación</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_194" color="primary" (change)="filtros($event, 199, 'assets/img/icon_maps/194.png')">Robo a cuentahabiente</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_195" color="primary" (change)="filtros($event, 200, 'assets/img/icon_maps/195.png')">Robo a negocio</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_196" color="primary" (change)="filtros($event, 201, 'assets/img/icon_maps/196.png')">Robo a pasajero</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_197" color="primary" (change)="filtros($event, 202, 'assets/img/icon_maps/197.png')">Robo a repartidor</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_198" color="primary" (change)="filtros($event, 203, 'assets/img/icon_maps/198.png')">Robo a transeúnte</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_199" color="primary" (change)="filtros($event, 204, 'assets/img/icon_maps/199.png')">Robo a transportista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_200" color="primary" (change)="filtros($event, 205, 'assets/img/icon_maps/200.png')">Robo a vehículo</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_201" color="primary" (change)="filtros($event, 206, 'assets/img/icon_maps/201.png')">Violación</mat-checkbox><br />
+                </mat-expansion-panel>
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Incidentes viales C5</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2017</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_202" color="primary" (change)="filtros($event, 207, 'assets/img/icon_maps/202.png')">Accidente motociclista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_203" color="primary" (change)="filtros($event, 208, 'assets/img/icon_maps/203.png')">Accidente volcadura</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_204" color="primary" (change)="filtros($event, 209, 'assets/img/icon_maps/204.png')">Cadáver accidente atropellado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_205" color="primary" (change)="filtros($event, 210, 'assets/img/icon_maps/205.png')">Choque con lesionado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_206" color="primary" (change)="filtros($event, 211, 'assets/img/icon_maps/206.png')">Choque con prensados</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_207" color="primary" (change)="filtros($event, 212, 'assets/img/icon_maps/207.png')">Choque sin lesionado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_208" color="primary" (change)="filtros($event, 213, 'assets/img/icon_maps/208.png')">Detención ciudadana</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_209" color="primary" (change)="filtros($event, 214, 'assets/img/icon_maps/209.png')">Lesionado atropellado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_210" color="primary" (change)="filtros($event, 215, 'assets/img/icon_maps/210.png')">Otros accidentes</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_211" color="primary" (change)="filtros($event, 216, 'assets/img/icon_maps/211.png')">Persona atrapada desbarrancada</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_212" color="primary" (change)="filtros($event, 217, 'assets/img/icon_maps/212.png')">Vehículo atrapado</mat-checkbox><br />
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2018</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_213" color="primary" (change)="filtros($event, 218, 'assets/img/icon_maps/218.png')">Accidente ferroviario</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_214" color="primary" (change)="filtros($event, 219, 'assets/img/icon_maps/219.png')">Accidente motociclista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_215" color="primary" (change)="filtros($event, 220, 'assets/img/icon_maps/220.png')">Accidente volcadura</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_216" color="primary" (change)="filtros($event, 221, 'assets/img/icon_maps/221.png')">Cadáver accidente atropellado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_217" color="primary" (change)="filtros($event, 230, 'assets/img/icon_maps/222.png')">Choque con lesionado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_218" color="primary" (change)="filtros($event, 223, 'assets/img/icon_maps/223.png')">Choque con prensados</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_219" color="primary" (change)="filtros($event, 224, 'assets/img/icon_maps/224.png')">Choque sin lesionado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_220" color="primary" (change)="filtros($event, 225, 'assets/img/icon_maps/225.png')">Detención ciudadana</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_221" color="primary" (change)="filtros($event, 226, 'assets/img/icon_maps/226.png')">Lesionado atropellado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_222" color="primary" (change)="filtros($event, 227, 'assets/img/icon_maps/227.png')">Otros accidentes</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_223" color="primary" (change)="filtros($event, 228, 'assets/img/icon_maps/228.png')">Persona atrapada desbarrancada</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_224" color="primary" (change)="filtros($event, 229, 'assets/img/icon_maps/229.png')">Vehículo atrapado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_225" color="primary" (change)="filtros($event, 230, 'assets/img/icon_maps/230.png')">Vehículo desbarrancado</mat-checkbox><br />
+                </mat-expansion-panel>
+                <mat-expansion-panel>
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      <b>2019</b>
+                    </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <mat-checkbox [(ngModel)]="chk_226" color="primary" (change)="filtros($event, 231, 'assets/img/icon_maps/226 (2).png')">Accidente motociclista</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_227" color="primary" (change)="filtros($event, 232, 'assets/img/icon_maps/227 (2).png')">Accidente volcadura</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_228" color="primary" (change)="filtros($event, 233, 'assets/img/icon_maps/228 (2).png')">Cadáver accidente atropellado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_229" color="primary" (change)="filtros($event, 234, 'assets/img/icon_maps/229 (2).png')">Choque con lesionado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_230" color="primary" (change)="filtros($event, 235, 'assets/img/icon_maps/230 (2).png')">Choque con prensados</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_231" color="primary" (change)="filtros($event, 236, 'assets/img/icon_maps/231.png')">Choque sin lesionado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_232" color="primary" (change)="filtros($event, 237, 'assets/img/icon_maps/232.png')">Detención ciudadana</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_233" color="primary" (change)="filtros($event, 238, 'assets/img/icon_maps/233.png')">Lesionado atropellado</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_234" color="primary" (change)="filtros($event, 239, 'assets/img/icon_maps/234.png')">Otros accidentes</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_235" color="primary" (change)="filtros($event, 240, 'assets/img/icon_maps/235.png')">Persona atrapada desbarrancada</mat-checkbox><br />
+                  <mat-checkbox [(ngModel)]="chk_236" color="primary" (change)="filtros($event, 241, 'assets/img/icon_maps/236.png')">Vehículo atrapado</mat-checkbox><br />
+                </mat-expansion-panel>
+              </mat-expansion-panel>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_237" color="primary" (change)="filtros($event, 242, 'assets/img/icon_maps/237.png')">LUNAS Servicio de asesoría a mujeres</mat-checkbox>
+              <br />
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Servicios de esparcimiento culturales y deportivos, <br /> y otros servicios recreativos</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_238" color="primary" (change)="filtros($event, 17, 'assets/img/icon_maps/17.png')">Artistas escritores independientes</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_239" color="primary" (change)="filtros($event, 18, 'assets/img/icon_maps/18.png')">Billares</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_240" color="primary" (change)="filtros($event, 19, 'assets/img/icon_maps/19.png')">Casas de juegos electrónicos</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_241" color="primary" (change)="filtros($event, 20, 'assets/img/icon_maps/20.png')">Centros de acondicionamiento físico público</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_242" color="primary" (change)="filtros($event, 21, 'assets/img/icon_maps/21.png')">Centros de acondicionamiento físico privado</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_243" color="primary" (change)="filtros($event, 22, 'assets/img/icon_maps/22.png')">Clubes deportivos del sector privado </mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_244" color="primary" (change)="filtros($event, 23, 'assets/img/icon_maps/23.png')">Clubes o ligas de aficionados</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_245" color="primary" (change)="filtros($event, 24, 'assets/img/icon_maps/24.png')">Compañía de teatro sector público</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_246" color="primary" (change)="filtros($event, 25, 'assets/img/icon_maps/25.png')">Equipos deportivos profesionales</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_247" color="primary" (change)="filtros($event, 26, 'assets/img/icon_maps/26.png')">Otros servicios de esparcimiento</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_248" color="primary" (change)="filtros($event, 27, 'assets/img/icon_maps/27.png')">Parques de diversiones sector privado</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_249" color="primary" (change)="filtros($event, 28, 'assets/img/icon_maps/28.png')">Parques de diversiones sector público</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_250" color="primary" (change)="filtros($event, 29, 'assets/img/icon_maps/29.png')">Promotores de espectáculo sector privado</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_251" color="primary" (change)="filtros($event, 30, 'assets/img/icon_maps/30.png')">Promotores de espectáculo sector público</mat-checkbox>
+                <br />
+                <mat-checkbox [(ngModel)]="chk_252" color="primary" (change)="filtros($event, 31, 'assets/img/icon_maps/31.jpg')">Venta de billetes de lotería</mat-checkbox>
+                <br />
+              </mat-expansion-panel>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_253" color="primary" (change)="filtros($event, 258, 'assets/img/icon_maps/110.png')">Vulnerabilidad Socio administrativa</mat-checkbox>
+            </mat-expansion-panel>
+          </mat-expansion-panel>
+
+
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <mat-checkbox [(ngModel)]="chk_trab" color="primary"><b>Trabajo de campo</b></mat-checkbox>
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Identificación de riesgos en las colonias</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_254" color="primary" (change)="filtros($event, 259, 'assets/img/icon_maps/254.png')">Fenómeno Geológico</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_255" color="primary" (change)="filtros($event, 260, 'assets/img/icon_maps/255.png')">Fenómenos Hidrometeorológicos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_256" color="primary" (change)="filtros($event, 261, 'assets/img/icon_maps/256.png')">Fenómenos Químico-Tecnológicos</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_257" color="primary" (change)="filtros($event, 262, 'assets/img/icon_maps/257.png')">Sanitario ecológico</mat-checkbox>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_258" color="primary" (change)="filtros($event, 263, 'assets/img/icon_maps/258.png')">Riesgos socio-organizativos</mat-checkbox>
+              <br />
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Identificación de riesgos en unidades habitacionales</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_259" color="primary" (change)="filtros($event, 264, 'assets/img/icon_maps/259.png')">Características de la Unidad Habitacional</mat-checkbox>
+              <br />
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Riesgos Identificados</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_260" color="primary" (change)="filtros($event, 265, 'assets/img/icon_maps/254.png')">Fenómeno Geológico</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_261" color="primary" (change)="filtros($event, 266, 'assets/img/icon_maps/255.png')">Fenómenos Hidrometeorológicos</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_262" color="primary" (change)="filtros($event, 267, 'assets/img/icon_maps/256.png')">Fenómenos Químico-Tecnológicos</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_263" color="primary" (change)="filtros($event, 268, 'assets/img/icon_maps/257.png')">Sanitario ecológico</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_264" color="primary" (change)="filtros($event, 269, 'assets/img/icon_maps/258.png')">Riesgos socio-organizativos</mat-checkbox><br />
+                <br />
+              </mat-expansion-panel>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Detección de riesgos en inmuebles públicos</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Características del inmueble</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_265" color="primary" (change)="filtros($event, 270, 'assets/img/icon_maps/265.png')">Tipo de inmueble</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_266" color="primary" (change)="filtros($event, 271, 'assets/img/icon_maps/265.png')">Servicios ofrecidos</mat-checkbox><br />
+              </mat-expansion-panel>
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Riesgos Identificados</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_267" color="primary" (change)="filtros($event, 272, 'assets/img/icon_maps/254.png')">Fenómeno Geológico</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_268" color="primary" (change)="filtros($event, 273, 'assets/img/icon_maps/255.png')">Fenómenos Hidrometeorológicos</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_269" color="primary" (change)="filtros($event, 274, 'assets/img/icon_maps/256.png')">Fenómenos Químico-Tecnológicos</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_270" color="primary" (change)="filtros($event, 275, 'assets/img/icon_maps/257.png')">Sanitario ecológico</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_271" color="primary" (change)="filtros($event, 276, 'assets/img/icon_maps/258.png')">Riesgos socio-organizativos</mat-checkbox><br />
+              </mat-expansion-panel>
+              <br />
+              <mat-checkbox [(ngModel)]="chk_272" color="primary" (change)="filtros($event, 277, 'assets/img/icon_maps/272.png')">¿Cuenta con personal capacitado?</mat-checkbox><br />
+              <mat-checkbox [(ngModel)]="chk_273" color="primary" (change)="filtros($event, 278, 'assets/img/icon_maps/273.png')">¿Cuentan con seguro de responsabilidad civil?</mat-checkbox><br />
+              <mat-checkbox [(ngModel)]="chk_274" color="primary" (change)="filtros($event, 279, 'assets/img/icon_maps/274.png')">¿Tiene protocolo de actuación en caso de riesgo? </mat-checkbox><br />
+            </mat-expansion-panel>
+
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                  <b>Estudio de percepción</b>
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <mat-checkbox [(ngModel)]="chk_alcohol" color="primary">Estudio de Consumo de alcohol en vía pública </mat-checkbox><br />
+              <mat-checkbox [(ngModel)]="chk_comercio" color="primary">Estudio de Comercio en vía pública </mat-checkbox><br />
+              <mat-checkbox [(ngModel)]="chk_genero" color="primary">Estudio de Violencia de Género </mat-checkbox><br />
+              <mat-checkbox [(ngModel)]="chk_seguridad" color="primary">Estudio de percepción Seguridad </mat-checkbox><br />
+              <mat-checkbox [(ngModel)]="chk_per_riesgos" color="primary">Estudio de percepción de Riesgos </mat-checkbox><br />
+            </mat-expansion-panel>
+          </mat-expansion-panel>
+        </mat-accordion>
+
+      </div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+
+      <span style="position:absolute; top:2%; left:2%; z-index:10000">
+        <div class="input-group col-md-12">
+          <span class="input-group-append">
+            <button class="btn btn-outline-secondary sidebar-toggle" type="button" (click)="sidenav.toggle()">
+              <i class="fa fa-bars" style="padding:0 10px 0 10px"></i>
+            </button>
+          </span>
+          <input class="form-control py-4 " style="width:500px !important" type="search" placeholder="Buscar en el mapa" ngx-google-places-autocomplete #placesRef="ngx-places" (onAddressChange)="handleAddressChange($event)">
+        </div>
+
+      </span>
+      <agm-map [latitude]="latitud"
+               [longitude]="longitud"
+               [zoom]="zoom"
+               [fullscreenControl]="true"
+               [fullscreenControlOptions]="screenOptions"
+               [disableDefaultUI]="false"
+               [zoomControl]="true"
+               (mapClick)="mapClicked($event)">
+
+        <agm-marker *ngFor="let m of markers; let i = index"
+                    (markerClick)="clickedMarker(m)"
+                    [latitude]="m.latitud"
+                    [longitude]="m.longitud"
+                    [label]="m.label"
+                    [markerDraggable]="m.draggable"
+                    [iconUrl]="
+                                {
+                                    url: m.url,
+                                    scaledSize: {
+                                        width: 30,
+                                        height: 30
+                                    }
+                                }"
+                    (dragEnd)="markerDragEnd(m, $event)">
+
+          <!--<agm-info-window>
+            <strong>InfoWindow content</strong>
+          </agm-info-window>-->
+
+        </agm-marker>
+
+        <!--<agm-circle [latitude]="markers[0].latitud" [longitude]="markers[0].longitud"
+                    [radius]="400"
+                    [fillColor]="'#37F53A'"
+                    [circleDraggable]="true"
+                    [editable]="true">
+        </agm-circle>-->
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/vc_1.kml'"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/gas_natural.kml'" *ngIf="chk_gas"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/fracturamiento_VC.kml'" *ngIf="chk_fracturamiento"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/sitios_de_estudios_geofisicosVC.kml'" *ngIf="chk_geofisicos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/sitios_de_fracturamiento_o_hundimiento_VC.kml'" *ngIf="chk_hundimiento"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/vulnerabildad_fisica_al_fracturamiento_VC.kml'" *ngIf="chk_vul_fracturamiento"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa1_lomas.kml'" *ngIf="chk_lomas"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa2_transiciones.kml'" *ngIf="chk_transicion"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa3_lacustre.kml'" *ngIf="chk_lacustre"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/poligonos_vc3.kml'" *ngIf="chk_vc"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/consumo_alcohol.kml'" *ngIf="chk_alcohol"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/comercio_via_publica.kml'" *ngIf="chk_comercio"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/percepción_riesgos3.kml'" *ngIf="chk_per_riesgos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/percepción_seguridad.kml'" *ngIf="chk_seguridad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/violencia_genero.kml'" *ngIf="chk_genero"> </agm-kml-layer>
+      </agm-map>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

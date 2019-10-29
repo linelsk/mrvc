@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Jamaica" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Jamaica</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0043">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffc9f2e6</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Jamaica</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>JAMAICA</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>JAMAICA</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>JAMAICA</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-031</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5511</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5510</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0043</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.12568104127064,19.40435327117737,0 -99.12326179708984,19.40479280955455,0 -99.1222959491607,19.40496684780892,0 -99.12231787735514,19.40502076350778,0 -99.12230124700582,19.40517969865613,0 -99.12218550592641,19.40542588178217,0 -99.12205292563182,19.40555185832663,0 -99.12193185348721,19.40563951347832,0 -99.12181081380928,19.40577095546998,0 -99.12184054458827,19.40696412964477,0 -99.12187378574325,19.40918762315515,0 -99.12236052122057,19.40910644220227,0 -99.12284725620717,19.40902525994759,0 -99.12330863634119,19.40898791213095,0 -99.12384948150428,19.40894413026352,0 -99.12425594992619,19.40892271701318,0 -99.1247909085715,19.40889453334787,0 -99.12535801153113,19.40886373602654,0 -99.1267117325981,19.40894268727757,0 -99.12616627986195,19.40682460192702,0 -99.12582524602118,19.40523183057826,0 -99.12569782960244,19.40456690456677,0 -99.12568620668179,19.40441900167117,0 -99.12568104127064,19.40435327117737,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

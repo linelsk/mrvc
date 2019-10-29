@@ -1,0 +1,39 @@
+agm-map {
+  height: 100vh;
+}
+
+.label {
+  color: #aaa4a4;
+  font-size: medium;
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-radio-group {
+  display: block;
+  border: 1px solid #555;
+  margin: 20px;
+  padding: 10px;
+}
+
+.sidebar-toggle {
+  background-color: #fff !important;
+}
+
+.sidebar-toggle:hover {
+  background-color: #fff !important;
+}

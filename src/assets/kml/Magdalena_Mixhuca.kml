@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Magdalena_Mixhuca" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Magdalena_Mixhuca</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0052">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>fffcc0e6</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Magdalena_Mixhuca</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>MAGDALENA  MIXHUCA</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>MAGDALENA  MIXHUCA</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>MAGDALENA  MIXHUCA</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-036</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5384, 5386, 5387, 5396</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0052</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.12187378574325,19.40918762315515,0 -99.12184054458827,19.40696412964477,0 -99.12181081380928,19.40577095546998,0 -99.12193185348721,19.40563951347832,0 -99.12205292563182,19.40555185832663,0 -99.12218550592641,19.40542588178217,0 -99.12230124700582,19.40517969865613,0 -99.12231787735514,19.40502076350778,0 -99.1222959491607,19.40496684780892,0 -99.12226358840918,19.40488058383333,0 -99.12215470902993,19.40471557515546,0 -99.12194035250005,19.40471666752712,0 -99.12162567017914,19.40466380297189,0 -99.12148611387869,19.40464035824791,0 -99.12111273242881,19.40471722089609,0 -99.12101799014472,19.40493962413643,0 -99.12102335333253,19.40509523474541,0 -99.12102698472404,19.40520059783755,0 -99.1204277723551,19.40530327109858,0 -99.11950820731134,19.40547153377549,0 -99.11895071966549,19.40555528270081,0 -99.11851321110329,19.40558410978661,0 -99.11720605410359,19.40558322522567,0 -99.11528001599911,19.40559658285348,0 -99.11476157036564,19.40564714613967,0 -99.11434094400195,19.40572007824121,0 -99.11390591720846,19.40579360475971,0 -99.11391118343821,19.40587287336817,0 -99.11388418298934,19.40604659428601,0 -99.1137237479104,19.4062110573573,0 -99.11357873236027,19.40756075463824,0 -99.11349286415455,19.4083599418989,0 -99.1135874282584,19.40837100250345,0 -99.1162818840475,19.40868373288582,0 -99.11989046040158,19.40908370467632,0 -99.12097690364415,19.40914063274482,0 -99.1215920064445,19.40917286035144,0 -99.12172176073511,19.40917964938069,0 -99.12176885171415,19.40918212621153,0 -99.12181330137844,19.40918445691315,0 -99.12187378574325,19.40918762315515,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

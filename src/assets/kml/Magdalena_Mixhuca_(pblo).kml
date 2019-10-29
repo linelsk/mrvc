@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Magdalena_Mixhuca_(pblo)" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Magdalena_Mixhuca_(pblo)</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0050">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffc5fcef</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Magdalena_Mixhuca_(pblo)</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>MAGDALENA  MIXHUCA (PBLO)</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>MAGDALENA  MIXHUCA (PBLO)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>MAGDALENA  MIXHUCA (PBLO)</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-037</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5382, 5383, 5385, 5395</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5381</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0050</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.12187378574325,19.40918762315515,0 -99.12181330137844,19.40918445691315,0 -99.12176885171415,19.40918212621153,0 -99.12172176073511,19.40917964938069,0 -99.1215920064445,19.40917286035144,0 -99.12097690364415,19.40914063274482,0 -99.11989046040158,19.40908370467632,0 -99.1162818840475,19.40868373288582,0 -99.1135874282584,19.40837100250345,0 -99.11349286415455,19.4083599418989,0 -99.11128525734831,19.40831926200718,0 -99.11116944196617,19.41168170303705,0 -99.11314689993361,19.41167714674063,0 -99.11364545323072,19.41167964618004,0 -99.11409682295702,19.4116819078901,0 -99.11417243005452,19.41168228663027,0 -99.11459113565397,19.41168438349108,0 -99.11502189093474,19.4116865396892,0 -99.11515988723205,19.41168723023053,0 -99.11574097152639,19.41169013685944,0 -99.11603824418772,19.41169162312187,0 -99.11617518533923,19.41169230761751,0 -99.11632869653607,19.41169323112352,0 -99.11659249610355,19.41169481780892,0 -99.11700980687516,19.41169732704181,0 -99.11743921210911,19.41169990799642,0 -99.11809409329284,19.41170384222762,0 -99.11857531472481,19.41170673168464,0 -99.11864259021382,19.41170713553357,0 -99.1190346121782,19.41170948831194,0 -99.11945484695377,19.41171200947432,0 -99.11987930328981,19.41171455497687,0 -99.12031241504825,19.41171715136454,0 -99.1206777996822,19.41171934094351,0 -99.12073739950883,19.41170832423106,0 -99.12118770111279,19.4116250876837,0 -99.1216324888554,19.41154286917453,0 -99.12173954161212,19.41152308067258,0 -99.12181480779557,19.41150916781866,0 -99.12189554671329,19.41149424329982,0 -99.12194323321377,19.41148542773794,0 -99.121940046384,19.41126463030461,0 -99.12193339607981,19.41105815166856,0 -99.12190642469636,19.41022073829261,0 -99.12187378574325,19.40918762315515,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

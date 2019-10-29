@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="20_de_noviembre_(ampl)" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>20_de_noviembre_(ampl)</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0018">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>64782878</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>64782878</color>
+      <fill>1</fill>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>20_de_noviembre_(ampl)</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>20 DE NOVIEMBRE (AMPL)</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>20 DE NOVIEMBRE (AMPL)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>20 DE NOVIEMBRE (AMPL)</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-067</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5244</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5214</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0018</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.11576076306427,19.44625619521556,0 -99.11605675058104,19.44511348107652,0 -99.11623685017132,19.44429494338155,0 -99.11673030209357,19.44414315026262,0 -99.11700457694337,19.44405877855478,0 -99.1171823506739,19.44424527296007,0 -99.11725018874257,19.44397223547298,0 -99.11730421271295,19.44375479687563,0 -99.11666288231207,19.4430676185189,0 -99.11632197675087,19.44270233870894,0 -99.11559567433412,19.44192409906754,0 -99.11502866602899,19.44131653726351,0 -99.11446166194568,19.44070897362557,0 -99.11441971580128,19.44066402669124,0 -99.11388332994744,19.44009030033274,0 -99.113753912112,19.44061934442854,0 -99.1137281634357,19.4407246014124,0 -99.11366939177476,19.44088195998876,0 -99.11357540969982,19.44113359225331,0 -99.11348142733716,19.4413852244637,0 -99.11310112755288,19.44240344619545,0 -99.11197610183584,19.44541358493364,0 -99.11248293739368,19.44552362476419,0 -99.11288807424205,19.44561158350779,0 -99.11362217235377,19.44577096005974,0 -99.11366243668272,19.44565612215461,0 -99.11486142900152,19.44592873058751,0 -99.11576076306427,19.44625619521556,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

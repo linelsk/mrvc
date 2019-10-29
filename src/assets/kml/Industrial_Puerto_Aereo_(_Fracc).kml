@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Industrial_Puerto_Aereo_(_Fracc)" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Industrial_Puerto_Aereo_(_Fracc)</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0042">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>fff7eebc</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Industrial_Puerto_Aereo_(_Fracc)</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>INDUSTRIAL PUERTO AEREO (FRACC)</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>INDUSTRIAL PUERTO AEREO (FRACC)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>INDUSTRIAL PUERTO AEREO (FRACC)</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-030</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5467</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0042</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.092810962108,19.42363407906761,0 -99.09409253380947,19.42358394445015,0 -99.09428545217899,19.42357875693456,0 -99.09443693606961,19.42357468343548,0 -99.09630456481942,19.42031596295967,0 -99.09636310521155,19.42021381670048,0 -99.09642164553078,19.42011167042156,0 -99.09628486651695,19.42003775128629,0 -99.09607767013101,19.419925776344,0 -99.09615546965867,19.41979015179031,0 -99.0962732278258,19.41958782795395,0 -99.09630145462597,19.41953904834579,0 -99.09635959032967,19.41943858212877,0 -99.0959543860925,19.41920523779202,0 -99.09562153606017,19.41901355877767,0 -99.09529915957663,19.41882791017094,0 -99.09495853569555,19.41863175225526,0 -99.09458508301306,19.41841668766132,0 -99.09426966245951,19.41823504166789,0 -99.09401216389492,19.41808675137474,0 -99.09392141314139,19.41803448896697,0 -99.09384609830492,19.41799111588189,0 -99.09386599196267,19.41816588113954,0 -99.09380517947795,19.4183614572867,0 -99.09377459066721,19.41840806786268,0 -99.09373495268685,19.41847138924479,0 -99.09365236593128,19.41854302327767,0 -99.09360917187946,19.41859844253185,0 -99.09351786050759,19.41871559758191,0 -99.09290332525752,19.41973955593898,0 -99.09222875996099,19.42075562176483,0 -99.0915927609806,19.42176251490897,0 -99.09061295820654,19.42332587312906,0 -99.09088006466214,19.42361587893328,0 -99.092810962108,19.42363407906761,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

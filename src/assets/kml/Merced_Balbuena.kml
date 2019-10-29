@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Merced_Balbuena" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Merced_Balbuena</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0051">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffcafaf8</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Merced_Balbuena</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>MERCED BALBUENA</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>MERCED BALBUENA</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>MERCED BALBUENA</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-038</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5267, 5268, 5269</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0051</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.12609109908854,19.42281743313811,0 -99.12658750563517,19.42171095386987,0 -99.12713303937066,19.42049495232617,0 -99.12716249417296,19.42030031448885,0 -99.12735449833221,19.41903153638596,0 -99.12740688748265,19.41868534147827,0 -99.12635158327601,19.41853608678475,0 -99.125154100695,19.41836671563155,0 -99.12454771951668,19.41828094632563,0 -99.12446688689222,19.41826951283246,0 -99.1239748233311,19.41818665801724,0 -99.12354610794552,19.41813148923043,0 -99.12309490617399,19.4180659431774,0 -99.12297080393067,19.41804871925285,0 -99.12261072360458,19.41800271429023,0 -99.12220635519354,19.41793366068033,0 -99.12175815247872,19.41787387903506,0 -99.12124174532667,19.41780489833654,0 -99.1211757079312,19.41779574788969,0 -99.12113288014808,19.41779205711109,0 -99.12107921332442,19.41778241374067,0 -99.12094491166235,19.41776385511832,0 -99.12077472281332,19.41890360644146,0 -99.120564851306,19.42039314970106,0 -99.12043045217136,19.42134702069896,0 -99.1204180275883,19.42150254537625,0 -99.12040220039175,19.42170069295364,0 -99.12036925157658,19.42211336267848,0 -99.12043724600714,19.4221243976042,0 -99.12048879361343,19.42213276418784,0 -99.12051357562193,19.42213678649802,0 -99.1205848793264,19.42214835961655,0 -99.12062725022973,19.42215333848742,0 -99.12114743996698,19.42220586635459,0 -99.12158986191874,19.42225686865414,0 -99.12241080319998,19.42235424964694,0 -99.12295154407634,19.42241917268071,0 -99.12407235371083,19.42255365049747,0 -99.12609109908854,19.42281743313811,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

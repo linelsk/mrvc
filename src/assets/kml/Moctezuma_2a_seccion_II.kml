@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Moctezuma_2a_seccion_II" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Moctezuma_2a_seccion_II</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0058">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffcafacd</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Moctezuma_2a_seccion_II</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>MOCTEZUMA 2A SECCION II</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>MOCTEZUMA 2A SECCION II</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>MOCTEZUMA 2A SECCION II</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-080</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5297, 5298, 5299, 5300, 5301, 5302, 5307, 5308</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0058</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.09358215568378,19.43558558648481,0 -99.09446864730022,19.43395240778852,0 -99.09498235190142,19.43304577215185,0 -99.09503973509951,19.43291444390027,0 -99.09537568510821,19.43235157180151,0 -99.09587955604967,19.43260852569982,0 -99.09638342857124,19.43286547818552,0 -99.09653252311465,19.43260528260871,0 -99.09809457566959,19.43341906163846,0 -99.09795293817018,19.43367109331299,0 -99.09845047503796,19.43391747933016,0 -99.09894801340163,19.43416386397037,0 -99.09944178809117,19.43440143880867,0 -99.10034943784218,19.43276370732752,0 -99.09985207245889,19.43252231040147,0 -99.09934060547137,19.43227406706764,0 -99.09882914003285,19.43202582227915,0 -99.09830622752207,19.43177643437454,0 -99.09882363108248,19.43078415571303,0 -99.099638111524,19.43056366500753,0 -99.09858488605664,19.43004529684719,0 -99.09807686399218,19.42979525919787,0 -99.09755042449719,19.42953615456229,0 -99.09706304575322,19.42929627286526,0 -99.09656375539615,19.42904262097365,0 -99.09605127842599,19.42878226769672,0 -99.09588984730657,19.42870526413325,0 -99.09545261501786,19.42849670075047,0 -99.09498685515391,19.42827735042202,0 -99.09450362618492,19.42804977109724,0 -99.09403285256262,19.4278280558309,0 -99.09383916467412,19.42773683616604,0 -99.0936287762262,19.42761910794298,0 -99.09258442858371,19.42703471042402,0 -99.09189600946756,19.42823893947643,0 -99.09176483781172,19.42847897242114,0 -99.09091857463915,19.43002754257205,0 -99.09082570587825,19.43017599451031,0 -99.08997040210606,19.43170366965579,0 -99.08908031280302,19.43332361976821,0 -99.08962728618661,19.43359462995395,0 -99.09010619172361,19.43383191230214,0 -99.09059559818967,19.43406375238474,0 -99.09106148922383,19.43430676080353,0 -99.09152737538898,19.43453861014962,0 -99.0920006256535,19.43476566060055,0 -99.09241117237143,19.43497769263345,0 -99.09259163522192,19.43507137730244,0 -99.09306290388646,19.43531602822813,0 -99.09358215568378,19.43558558648481,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

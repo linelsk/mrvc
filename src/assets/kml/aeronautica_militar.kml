@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="aeronautica_militar" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>aeronautica_militar</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0013">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>641E7878</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>641E7878</color>
+      <fill>1</fill>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>aeronautica_militar</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>AERONAUTICA MILITAR</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>AERONAUTICA MILITAR</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>AERONAUTICA MILITAR</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-003</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5357</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5342, 5372</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0013</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.11619694328545,19.42502168967945,0 -99.11637367017353,19.4235065530666,0 -99.11657139832414,19.42204704219336,0 -99.11665348068388,19.42150172493499,0 -99.11668896136695,19.42126600655058,0 -99.11669801914839,19.42120602002369,0 -99.1167105977095,19.42112271652806,0 -99.11672855606157,19.42100343124429,0 -99.11668195624456,19.4209905778811,0 -99.11681318275852,19.42018996536545,0 -99.11686999865334,19.41984332934443,0 -99.11701495353121,19.41886239838671,0 -99.1171707817213,19.41780787301541,0 -99.11730411381518,19.41681527219675,0 -99.11691210247494,19.41680157630989,0 -99.11647628276045,19.41678634887306,0 -99.11606454938628,19.4167719620439,0 -99.11583381886908,19.41676389942566,0 -99.11565591187114,19.41675631909097,0 -99.11547800488873,19.41674873858195,0 -99.1153632827415,19.41674385024778,0 -99.11534415988589,19.41687380083562,0 -99.11526501696012,19.41741161945364,0 -99.11505910230599,19.41881090338304,0 -99.11481451294186,19.42047296850579,0 -99.11480360298032,19.42054618516382,0 -99.11479804741173,19.42058347807213,0 -99.11479496964101,19.4206041392513,0 -99.11478279855564,19.42068505041066,0 -99.11477501765917,19.4207385466497,0 -99.11476681336275,19.42079335460465,0 -99.11475927176609,19.42084419579504,0 -99.11466684019717,19.42146437484067,0 -99.11454513128162,19.42228098605788,0 -99.11436462376058,19.42349524768926,0 -99.11419578485868,19.42475953135753,0 -99.1142991606847,19.42477073228806,0 -99.11447897666538,19.42480572972573,0 -99.11613470151268,19.42501386576419,0 -99.11619694328545,19.42502168967945,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

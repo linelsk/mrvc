@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Janitzio" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Janitzio</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0044">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffb8e7f2</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Janitzio</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>JANITZIO</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>JANITZIO</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>JANITZIO</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-032</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5213</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5206, 5212, 5246</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0044</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.11794333538597,19.45048467195576,0 -99.11807398843388,19.44994728464057,0 -99.11816399730245,19.44945555821702,0 -99.1182731178216,19.44898155704374,0 -99.11837956121789,19.44849606786937,0 -99.1185215991872,19.44800633431683,0 -99.11863593606572,19.44741274216421,0 -99.11877225595774,19.44672744232487,0 -99.11874428109626,19.44580101464786,0 -99.11895361417966,19.44584357707301,0 -99.11877407432182,19.4456508839454,0 -99.11860513034401,19.44545906687,0 -99.11865005891517,19.44526740884216,0 -99.11835525569565,19.44493607941215,0 -99.11755731754894,19.44403926723391,0 -99.11747198199159,19.44394335678615,0 -99.11742305405817,19.44388845100828,0 -99.11737902779279,19.44383885203616,0 -99.11735073188869,19.44380697450337,0 -99.11730421271295,19.44375479687563,0 -99.11725018874257,19.44397223547298,0 -99.1171823506739,19.44424527296007,0 -99.1169194384882,19.44530344404717,0 -99.11663380590572,19.44645304444434,0 -99.11628584579326,19.44785347530069,0 -99.11624171625736,19.4480310811512,0 -99.11601030540518,19.44899777139851,0 -99.11576664146479,19.45001563475839,0 -99.11583420085873,19.45003011288273,0 -99.11586876540139,19.4500375818013,0 -99.11590653408724,19.45004574308247,0 -99.11596803445863,19.45005903242809,0 -99.11648641030948,19.45017073479954,0 -99.11694422230771,19.4502693851898,0 -99.117407248014,19.45036915774279,0 -99.11794333538597,19.45048467195576,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

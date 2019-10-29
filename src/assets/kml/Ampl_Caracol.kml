@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Ampl_Caracol" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Ampl_Caracol</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0085">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>641478F0</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>641478F0</color>
+      <fill>1</fill>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Ampl_Caracol</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>AMPL CARACOL</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>AMPL CARACOL</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>AMPL CARACOL</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-013</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5443, 5444</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5445, 5449</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0085</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.06834564087021,19.43071266842738,0 -99.07130320572182,19.4290508933015,0 -99.07189830963002,19.42871652120083,0 -99.0724596325359,19.42840557816534,0 -99.07292330483053,19.42816633504997,0 -99.0719880613337,19.42804557135109,0 -99.07039964546711,19.42787293760066,0 -99.06989954476805,19.42781192161291,0 -99.06937543557604,19.42774722550183,0 -99.06832285703821,19.42760519345161,0 -99.06730137323918,19.42749465154024,0 -99.06679063185075,19.42743937842754,0 -99.06627989080309,19.42738410387686,0 -99.06573490667537,19.42732870850427,0 -99.06545945251578,19.42728465665234,0 -99.06503575220228,19.42721584816652,0 -99.06501148556815,19.42725331122444,0 -99.06431785558057,19.42836150505643,0 -99.0647078683738,19.42843927375234,0 -99.06489383290071,19.42847199230823,0 -99.06550393195765,19.42912215169747,0 -99.06595050626909,19.42959696873118,0 -99.06601660887914,19.42967057900711,0 -99.06646206399029,19.42986790260556,0 -99.06694160671158,19.43008551595741,0 -99.06745664629995,19.4303187926244,0 -99.06793767812886,19.43053120546104,0 -99.06834564087021,19.43071266842738,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

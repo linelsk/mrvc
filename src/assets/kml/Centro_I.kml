@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Centro_I" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Centro_I</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0024">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>6478FFF0</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>6478FFF0</color>
+      <fill>1</fill>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Centro_I</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>CENTRO I</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>CENTRO I</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>CENTRO I</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-072</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5255, 5256, 5257, 5258, 5260</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5259</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0024</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.12378589709064,19.43749034287479,0 -99.12395113633225,19.43642952681635,0 -99.12408274770519,19.43559114271793,0 -99.12421949962624,19.43473115946253,0 -99.12436668299505,19.4339535071461,0 -99.124537863527,19.43281739143481,0 -99.12467299568431,19.43197239852674,0 -99.12477384441776,19.43131189914973,0 -99.12478619141187,19.43123103329663,0 -99.12484581346359,19.43084054133296,0 -99.124994837882,19.42983078499021,0 -99.12511135172929,19.42919898252439,0 -99.12460353604152,19.42914080265062,0 -99.12377891732739,19.4290959741643,0 -99.122912211734,19.42894336365533,0 -99.12282912011825,19.42957298517735,0 -99.12266412253395,19.43068999565458,0 -99.12140699224823,19.43060522349206,0 -99.12134676644691,19.43059961751178,0 -99.12087299552404,19.4305555169238,0 -99.12026134707645,19.43050486251063,0 -99.12010198327292,19.43048518949453,0 -99.12021980204273,19.42907942475867,0 -99.11958589216077,19.4290347411328,0 -99.11954512364044,19.42903186900236,0 -99.11935215822435,19.42901827451907,0 -99.1192375263857,19.4290101985664,0 -99.11917501452604,19.42900579816028,0 -99.11903634097655,19.4299150249677,0 -99.11901114055003,19.43026574164455,0 -99.11887926263552,19.43210107500782,0 -99.11888651558925,19.43215775834796,0 -99.11895056806642,19.43216500637627,0 -99.11902101207782,19.43217297762876,0 -99.1190775559854,19.43217941152745,0 -99.11912466597248,19.43218468452308,0 -99.11915229789169,19.43218832012139,0 -99.11982331516228,19.43227660614134,0 -99.12108595199844,19.43244272480144,0 -99.1210947169189,19.43357779178663,0 -99.12108818291716,19.4343059007959,0 -99.12108007852227,19.43520899868369,0 -99.12124619886508,19.43524872780912,0 -99.12124786946144,19.43613817081116,0 -99.12127547563928,19.43722059991323,0 -99.12165354160014,19.43726121031783,0 -99.12206032085589,19.43730490409229,0 -99.12378589709064,19.43749034287479,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

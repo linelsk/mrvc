@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="El_arenal_4ta_sección" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>El_arenal_4ta_sección</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0032">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffcdf7d6</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>El_arenal_4ta_sección</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>EL ARENAL 4A SECCION</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>EL ARENAL 4A SECCION</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>EL ARENAL 4A SECCION</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-021</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5428, 5429, 5430, 5431, 5435, 5436, 5497, 5498</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5437</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0032</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.06162584225334,19.43334678299078,0 -99.06178307154102,19.43306850461906,0 -99.06189084613595,19.43287775493004,0 -99.06304390277768,19.43080544523684,0 -99.0629611801689,19.43080154668452,0 -99.06238896321763,19.4307745781983,0 -99.06162679007805,19.43073865429437,0 -99.06088098979953,19.42984520192459,0 -99.06036139629029,19.42922273264687,0 -99.05953712339267,19.42825119703729,0 -99.05927644150688,19.42794393910986,0 -99.05892489976425,19.42752958494788,0 -99.05821583500796,19.42669381809791,0 -99.05796463156003,19.42638582080081,0 -99.05732029077834,19.4263150082209,0 -99.05679501251366,19.42628427580427,0 -99.05630120604414,19.42622431116347,0 -99.05578790119772,19.42616197729581,0 -99.05529114625011,19.42610165175974,0 -99.0547943916656,19.42604132486344,0 -99.05451499119656,19.42599865725759,0 -99.05446672880427,19.42599128699959,0 -99.0542730162631,19.42594675099741,0 -99.0541289771398,19.42626651001802,0 -99.05259422185659,19.42967348855741,0 -99.05244131075952,19.43001292437222,0 -99.05243722582917,19.43004188770608,0 -99.0525886511391,19.43013395393623,0 -99.05274007661946,19.43022602003875,0 -99.05311533690696,19.4304163754388,0 -99.05363210419283,19.43055673033218,0 -99.05520544362769,19.43095904491818,0 -99.05564140831585,19.43107121049125,0 -99.05600757417435,19.43116541719927,0 -99.05641529495024,19.43127031410744,0 -99.05683410646459,19.43137959195516,0 -99.05720211702746,19.43147579913475,0 -99.05756985444141,19.43157193404638,0 -99.05843443903102,19.43179795270722,0 -99.05884760949496,19.43191218232836,0 -99.05956825833205,19.43211141814225,0 -99.06113534234942,19.43253912426661,0 -99.06131416383434,19.43265794465998,0 -99.061416689111,19.43281330060549,0 -99.06147970435816,19.4330034352379,0 -99.06148278772814,19.43329024534168,0 -99.06162584225334,19.43334678299078,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

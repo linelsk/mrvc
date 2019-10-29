@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Candelaria_de_los_patos_(U_Hab)" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Candelaria_de_los_patos_(U_Hab)</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0023">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>64F0FF14</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>64F0FF14</color>
+      <fill>1</fill>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Candelaria_de_los_patos_(U_Hab)</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>CANDELARIA DELOS PATOS (U HAB)</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>CANDELARIA DELOS PATOS (U HAB)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>CANDELARIA DELOS PATOS (U HAB)</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-011</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5262</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5259, 5263</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0023</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.12266412253395,19.43068999565459,0 -99.12282912011825,19.42957298517735,0 -99.122912211734,19.42894336365534,0 -99.12230165536033,19.42885879443958,0 -99.12231044190247,19.42881244607385,0 -99.12234406694893,19.42855803399154,0 -99.12236770556817,19.42837758307963,0 -99.12239134413635,19.42819713216133,0 -99.12240003780937,19.42807150304897,0 -99.12241131854839,19.42799066311831,0 -99.12166276354867,19.42789218260851,0 -99.12166519125036,19.4279897006382,0 -99.12166873197887,19.42813192745905,0 -99.12159706590256,19.42880243284413,0 -99.12131019945339,19.42883445013894,0 -99.1210382237859,19.42901579157191,0 -99.12086644513717,19.42912460195648,0 -99.12059433480216,19.42912478289589,0 -99.12021980204273,19.42907942475868,0 -99.12010198327292,19.43048518949453,0 -99.12026134707645,19.43050486251063,0 -99.12087299552404,19.4305555169238,0 -99.12140699224823,19.43060522349206,0 -99.12266412253395,19.43068999565459,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>kml toolbox tests</name>
+    <Folder>
+      <name>kml.poly3</name>
+      <id>kml.poly3</id>
+      <Placemark id="kml_poly3tpfc275749_9c60_474d_b419_d29a903da8be">
+        <name>30</name>
+        <visibility>1</visibility>
+        <description/>
+        <Style>
+          <LineStyle>
+            <color>FFFFFFFF</color>
+            <width>5</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>501400FF</color>
+          </PolyStyle>
+        </Style>
+        <Polygon id="Polygon_kml_poly3tpfc275749_9c60_474d_b419_d29a903da8be">
+          <extrude>0</extrude>
+          <tesselate>1</tesselate>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing id="LinearRing_kml_poly3tpfc275749_9c60_474d_b419_d29a903da8be">
+              <coordinates>
+                -111.98,40.6,0
+                -111.97,40.6,0
+                -111.97,40.6,1500
+                -111.99,40.6,1500
+                -111.99,40.6,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark id="kml_poly3tpb12d0de1_b554_45ed_b9fd_63d120582f23">
+        <name>31</name>
+        <visibility>1</visibility>
+        <description/>
+        <Style>
+          <LineStyle>
+            <color>FFFFFFFF</color>
+            <width>5</width>
+          </LineStyle>
+          <PolyStyle>
+            <color>FFFF0000</color>
+          </PolyStyle>
+        </Style>
+        <Polygon id="Polygon_kml_poly3tpb12d0de1_b554_45ed_b9fd_63d120582f23">
+          <extrude>0</extrude>
+          <tesselate>1</tesselate>
+          <altitudeMode>relativeToGround</altitudeMode>
+          <outerBoundaryIs>
+            <LinearRing id="LinearRing_kml_poly3tpb12d0de1_b554_45ed_b9fd_63d120582f23">
+              <coordinates>
+                -111.97,40.6,0
+                -111.97,40.62,0
+                -111.97,40.62,2000
+                -111.97,40.6,2000
+                -111.97,40.6,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Camera id="ID">
+        <TimePrimitive>...</TimePrimitive>
+        <gx:ViewerOptions>
+          <option> name="camera" type="boolean"></option>
+        </gx:ViewerOptions>
+        <longitude>-111.94</longitude>
+        <!-- kml:angle180 -->
+        <latitude>40.53</latitude>
+        <!-- kml:angle90 -->
+        <altitude>7500</altitude>
+        <!-- double -->
+        <heading>340</heading>
+        <!-- kml:angle360 -->
+        <tilt>60</tilt>
+        <!-- kml:anglepos180 -->
+        <roll>0</roll>
+        <!-- kml:angle180 -->
+        <altitudeMode>absolute</altitudeMode>
+      </Camera>
+    </Folder>
+  </Document>
+</kml>

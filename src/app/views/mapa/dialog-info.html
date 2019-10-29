@@ -1,0 +1,674 @@
+<div class="row">
+  <!-- header -->
+  <div class="col-xs-12 col-lg-11 text-left">
+    <h1 mat-dialog-title class="text-color">{{data.obj.nombre}}</h1>
+  </div>
+  <div class="col-xs-12 col-lg-1 text-right">
+    <h1 mat-dialog-title class="text-color" style="cursor:pointer">
+      <i class="fa fa-times" aria-hidden="true"
+         (click)="onNoClick()"></i>
+    </h1>
+  </div>
+
+  <div class="container" style="margin-bottom:15px">
+    <div class="col-xs-12">
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="data.obj.type != 7">
+    <div *ngIf="data.obj.type != 8">
+      <div *ngIf="data.obj.type != 13">
+        <div *ngIf="data.obj.type != 15">
+          <div *ngIf="data.obj.type != 16">
+            <div *ngIf="data.obj.type != 17">
+              <div *ngIf="data.obj.type != 18">
+                <div *ngIf="data.obj.type != 18">
+                  <div *ngIf="data.obj.type != 19">
+                    <div *ngIf="data.obj.type != 20">
+                      <div class="col-xs-12 margin-bottom">
+                        <label class="label" *ngIf="data.obj.type != 12">Actividad</label>
+                        <label class="label" *ngIf="data.obj.type == 12">Dirección</label><br />
+                        {{data.obj.actividad}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="data.obj.type == 1">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Capacidad</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 2">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Descripción</label><br />
+      {{data.obj.actividad}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Taxonomia:</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 3">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre:</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Capacidad:</label><br />
+      {{data.obj.no_personas}}
+    </div>
+
+    <div class="col-md-4">
+      <label class="label">Región:</label><br />
+      {{data.obj.region}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Fuente:</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 4">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Fenomeno</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Intensidad</label><br />
+      {{data.obj.no_personas}}
+    </div>
+
+    <div class="col-md-4">
+      <label class="label">Taxonomia</label><br />
+      {{data.obj.direccion}}
+    </div>
+
+    <div class="col-md-4">
+      <label class="label">rpve</label><br />
+      {{data.obj.region}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Fuente:</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 5">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Alcaldía</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Superficie</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 6">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Tipo de residuo</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Capacidad en toneladas</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 7">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Delito</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-3">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Categoría delito</label><br />
+      {{data.obj.actividad}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Año de inicio</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Año de hecho</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 8">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Delito</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-3" *ngIf="data.obj.direccion != null">
+      <label class="label">Sexo</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-3" *ngIf="data.obj.fuente != null">
+      <label class="label">Direccion</label><br />
+      {{data.obj.fuente}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Categoría</label><br />
+      {{data.obj.actividad}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Mes</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Año</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 9">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-3">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Clasificacion alarma</label><br />
+      {{data.obj.actividad}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Tipo entrada</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-3">
+      <label class="label">Año</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 10">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Servicios</label><br />
+      {{data.obj.actividad}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Correo eletrónico</label><br />
+      {{data.obj.region}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">teléfono</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 11">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Territorial</label><br />
+      {{data.obj.region}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Tipo fenomeno</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 12">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Cuenta con personal de emergencia</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Cuenta con seguro de responsabilidad civil</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Frecuencia simulacros</label><br />
+      {{data.obj.region}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Numero de departamentos</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Protocolo actuación en casa</label><br />
+      {{data.obj.riesgo}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 13">
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Granizadas</label><br />
+      {{data.obj.riesgo_2}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Inundaciones</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Inversion termica</label><br />
+      {{data.obj.no_personas}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Lluvia torrencial</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Nevadas</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Escases de agua</label><br />
+      {{data.obj.riesgo}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Sequia</label><br />
+      {{data.obj.riesgo_1}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 14">
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Derrame de hidrocarburos</label><br />
+      {{data.obj.riesgo_2}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Envenenamiento</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Epidemias</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Fugas de gas</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Incendios forestales</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Incendios urbano</label><br />
+      {{data.obj.riesgo}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Intoxicaciones</label><br />
+      {{data.obj.riesgo_1}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Radiacion</label><br />
+      {{data.obj.riesgo_3}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 15">
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Agrietamiento de construcciones</label><br />
+      {{data.obj.riesgo_2}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Agrietamientode pisos</label><br />
+      {{data.obj.direccion}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Caida de ceniza</label><br />
+      {{data.obj.no_personas}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Deslizamiento de suelo</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Flujos de lodo</label><br />
+      {{data.obj.fuente}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Sismo</label><br />
+      {{data.obj.riesgo}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Temblor</label><br />
+      {{data.obj.riesgo_1}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Terremoto</label><br />
+      {{data.obj.riesgo_3}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Vulcanismo</label><br />
+      {{data.obj.riesgo_4}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 16">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Lugar de entrevista</label><br />
+      {{data.obj.nombre}}
+    </div>
+    <div class="col-md-12">
+      <label class="label">Dirección</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 17">
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Nombre responsable establecimiento</label><br />
+      {{data.obj.nombre}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">No. de camas, habitaciones, locales</label><br />
+      {{data.obj.riesgo_2}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">No. de personas atiende al día</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">No. de personas trabajan inmueble</label><br />
+      {{data.obj.no_personas}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Perfil personas</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Tipo inmueble</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 18">
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Nombre</label><br />
+      {{data.obj.nombre}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Bardas en muy mal estado</label><br />
+      {{data.obj.riesgo_2}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Contaminacion de Agua</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Contaminacion de aire</label><br />
+      {{data.obj.no_personas}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Contaminacion de suelo</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Contaminacion visual</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 19">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      {{data.obj.direccion}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 20">
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Alcantarillado dañado</label><br />
+      {{data.obj.riesgo_14}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Arboles muy grandes</label><br />
+      {{data.obj.riesgo_2}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Bacheado condiciones deplorables</label><br />
+      {{data.obj.direccion}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Bardas mal estado</label><br />
+      {{data.obj.no_personas}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Calles alumbrado insuficiente</label><br />
+      {{data.obj.region}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Calles cerradas completo</label><br />
+      {{data.obj.fuente}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Calles invadidas grupos delictivos</label><br />
+      {{data.obj.riesgo}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Calles pesimo estado</label><br />
+      {{data.obj.riesgo_1}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Coladeras obstruidas</label><br />
+      {{data.obj.riesgo_3}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Esquinas calle mal estado</label><br />
+      {{data.obj.riesgo_4}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Mufa</label><br />
+      {{data.obj.riesgo_5}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Negocios contribuyan contaminación</label><br />
+      {{data.obj.riesgo_6}}
+    </div>
+  </div>
+
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Negocios representen riesgo</label><br />
+      {{data.obj.riesgo_7}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Parques abandono</label><br />
+      {{data.obj.riesgo_8}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Postes mal estado</label><br />
+      {{data.obj.riesgo_9}}
+    </div>
+  </div>
+
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Riesgo eléctrico</label><br />
+      {{data.obj.riesgo_10}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Socavon</label><br />
+      {{data.obj.riesgo_11}}
+    </div>
+    <div class="col-md-4">
+      <label class="label">Terrenos baldios basura</label><br />
+      {{data.obj.riesgo_12}}
+    </div>
+  </div>
+
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Vialidad interrumpida rejas</label><br />
+      {{data.obj.riesgo_13}}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

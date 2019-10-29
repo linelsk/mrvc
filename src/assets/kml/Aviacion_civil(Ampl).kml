@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Aviacion_civil_(_Ampl)" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Aviacion_civil_(_Ampl)</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0016">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>641400FF</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>641400FF</color>
+      <fill>1</fill>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Aviacion_civil_(_Ampl)</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>AVIACION CIVIL (AMPL)</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>AVIACION CIVIL (AMPL)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>AVIACION CIVIL (AMPL)</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-008</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td></td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5459, 5475, 5495</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0016</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.07521702030095,19.4153977778851,0 -99.07576002081456,19.41453735402443,0 -99.07656872353917,19.41325588578517,0 -99.07723408060437,19.41225333787995,0 -99.07738613386543,19.41200008095106,0 -99.07801556247789,19.41103206779258,0 -99.0786018808289,19.41013034260655,0 -99.07862348289928,19.41009626581052,0 -99.07864508496067,19.41006218901184,0 -99.07866510783461,19.41003060333318,0 -99.07853175367077,19.40995462062869,0 -99.07849527439767,19.40993362761858,0 -99.07772885319569,19.40949426956246,0 -99.07719651315948,19.40918931466161,0 -99.07686661024154,19.40896885250402,0 -99.07684047359366,19.40901282378685,0 -99.07680733027709,19.4090748266958,0 -99.07678827850853,19.4091105372716,0 -99.07676929761551,19.4091459762887,0 -99.07671386754882,19.40925647523151,0 -99.07667047301447,19.40933085206033,0 -99.07559860319525,19.41098934675475,0 -99.07568427666899,19.41103618602707,0 -99.07579382149145,19.4110960761087,0 -99.0754573601937,19.41165031677856,0 -99.07539449418648,19.41181263927167,0 -99.07538207630257,19.41185867347931,0 -99.07536965841175,19.41190470768593,0 -99.07530584739993,19.41214126026078,0 -99.07530010965523,19.41216253050916,0 -99.07528087528849,19.4122338337022,0 -99.07524686302865,19.4125200119854,0 -99.07519374641285,19.41311545088558,0 -99.07503519197694,19.41412765067416,0 -99.07495466804487,19.41521735676547,0 -99.07521702030095,19.4153977778851,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

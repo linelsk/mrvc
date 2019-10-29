@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Aviacion_civil" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Aviacion_civil</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0010">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>64781414</color>
+			<width>1</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>64781414</color>
+      <fill>1</fill>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Aviacion_civil</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>AVIACION CIVIL</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>AVIACION CIVIL</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>AVIACION CIVIL</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-007</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5460, 5461, 5474</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td>5459, 5462, 5475, 5494, 5495</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0010</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.08101431442913,19.41136351662822,0 -99.08022860870767,19.4109119424448,0 -99.0801619225324,19.41087457087475,0 -99.07907787043503,19.41026705185765,0 -99.07866510783461,19.41003060333318,0 -99.07864508496067,19.41006218901184,0 -99.07862348289928,19.41009626581052,0 -99.0786018808289,19.41013034260655,0 -99.07801556247789,19.41103206779258,0 -99.07738613386543,19.41200008095106,0 -99.07723408060437,19.41225333787995,0 -99.07656872353917,19.41325588578517,0 -99.07576002081456,19.41453735402443,0 -99.07521702030095,19.4153977778851,0 -99.07569477943774,19.41578950348346,0 -99.07566730080285,19.41583332214334,0 -99.07564379605145,19.41587470163328,0 -99.07562029128815,19.41591608112003,0 -99.07557297811913,19.4159837331012,0 -99.07512489669402,19.41603422159257,0 -99.07507845219266,19.41608284949139,0 -99.07503200766368,19.41613147737815,0 -99.07488420326752,19.41698405587906,0 -99.074965105422,19.41694301293271,0 -99.07514317922215,19.41691896702249,0 -99.07553982338629,19.4171337186102,0 -99.07607870835759,19.41745034951822,0 -99.07658821774274,19.41773902439183,0 -99.07712395341149,19.41804255574617,0 -99.07765385219892,19.41833799920869,0 -99.07822496800628,19.41747919591437,0 -99.07825780947381,19.4174163244798,0 -99.07829940126075,19.41733119348139,0 -99.07846179934064,19.41744725725591,0 -99.07917507663269,19.41795702347183,0 -99.08014392387102,19.41864943120518,0 -99.08018237502226,19.41867691092686,0 -99.08052046699258,19.41901309146479,0 -99.08067043834826,19.41927626576767,0 -99.08080471805145,19.41951190304707,0 -99.081422250657,19.42030771736065,0 -99.08146453379499,19.42033489117304,0 -99.08261528903185,19.42107443180379,0 -99.08314298516515,19.42020543142509,0 -99.08311216389836,19.42018858438864,0 -99.08218762951043,19.41958592370983,0 -99.08219908420305,19.41952293549424,0 -99.08225374146103,19.41922237999098,0 -99.0823449647463,19.41877551753628,0 -99.08237238170716,19.4186412135074,0 -99.08258876608585,19.41756057883564,0 -99.0829570464698,19.4157382927575,0 -99.08299728318256,19.41553919520481,0 -99.08301625018231,19.41544534335054,0 -99.08325689765336,19.41413911911556,0 -99.08326820407153,19.41407774783892,0 -99.08346452153793,19.41301212852251,0 -99.08354855898696,19.41298957069013,0 -99.08363869252356,19.41290739286307,0 -99.08366263684287,19.41288556198701,0 -99.0816050513712,19.41170303113052,0 -99.08105315944489,19.41138584214406,0 -99.08101431442913,19.41136351662822,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

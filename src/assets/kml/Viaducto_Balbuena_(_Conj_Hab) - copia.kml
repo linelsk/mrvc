@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="Viaducto_Balbuena_(_Conj_Hab)" xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<name>Viaducto_Balbuena_(_Conj_Hab)</name>
+	<Snippet maxLines="0"></Snippet>
+	<Style id="PolyStyle0076">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ff6e6e6e</color>
+			<width>0.4</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>ffe7f2c7</color>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer0">
+		<name>Viaducto_Balbuena_(_Conj_Hab)</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_00000">
+			<name>VIADUCTO  - BALBUENA )CONJ HAB)</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>VIADUCTO  - BALBUENA )CONJ HAB)</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>nombre</td>
+
+<td>VIADUCTO  - BALBUENA )CONJ HAB)</td>
+
+</tr>
+
+<tr>
+
+<td>entidad</td>
+
+<td>9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_alc</td>
+
+<td>17</td>
+
+</tr>
+
+<tr>
+
+<td>alcaldia</td>
+
+<td>VENUSTIANO CARRANZA</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>cve_col</td>
+
+<td>17-064</td>
+
+</tr>
+
+<tr>
+
+<td>secc_com</td>
+
+<td>5388, 5389, 5390, 5391</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>secc_par</td>
+
+<td></td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#PolyStyle0076</styleUrl>
+			<MultiGeometry>
+				<Polygon>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-99.10697358720493,19.40830777259761,0 -99.1083523795926,19.40830713060304,0 -99.10838529144216,19.40830736434866,0 -99.10913158478437,19.40831266305225,0 -99.10957788668945,19.40831367126373,0 -99.11002858204556,19.40831468828781,0 -99.11110029226157,19.40831710218409,0 -99.11117751119645,19.40831727586621,0 -99.11349286415455,19.4083599418989,0 -99.11357873236027,19.40756075463824,0 -99.1137237479104,19.4062110573573,0 -99.11388418298934,19.40604659428601,0 -99.11391118343821,19.40587287336817,0 -99.11390591720846,19.40579360475971,0 -99.1138879979505,19.40573872489925,0 -99.11384585412799,19.40560965427171,0 -99.11351051847885,19.40552809793644,0 -99.1131572670644,19.40573034962616,0 -99.11224876113168,19.40591641698131,0 -99.11109576550601,19.40615255011659,0 -99.108235842903,19.40674758481833,0 -99.10708257767968,19.40699280750933,0 -99.10669815429074,19.40707321050125,0 -99.10597689442871,19.40723266521884,0 -99.10390214173178,19.40769132979218,0 -99.10340733028599,19.4078007136416,0 -99.10349653042277,19.40788428745539,0 -99.10361463525315,19.40799494259079,0 -99.10368584384106,19.4080616594462,0 -99.10447458554545,19.40790687131139,0 -99.10441503050689,19.40796147987531,0 -99.10408363071615,19.40826535350289,0 -99.10563686286132,19.40828815772847,0 -99.10697358720493,19.40830777259761,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</MultiGeometry>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
