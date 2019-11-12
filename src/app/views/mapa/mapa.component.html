@@ -237,7 +237,7 @@
                 <br />
                 <mat-checkbox [(ngModel)]="chk_lacustre" color="primary">Zona 3 (Lacustre)</mat-checkbox>
                 <br />
-                <mat-checkbox [(ngModel)]="chk_vc" color="primary">Venustiano Carranza</mat-checkbox>
+                <mat-checkbox [(ngModel)]="chk_vc" color="primary">Venustiano Carranza (Censo 2010)</mat-checkbox>
                 <br />
               </mat-expansion-panel>
             </mat-expansion-panel>
@@ -624,9 +624,9 @@
               <br />
               <mat-checkbox [(ngModel)]="chk_256" color="primary" (change)="filtros($event, 261, 'assets/img/icon_maps/256.png')">Fenómenos Químico-Tecnológicos</mat-checkbox>
               <br />
-              <mat-checkbox [(ngModel)]="chk_257" color="primary" (change)="filtros($event, 262, 'assets/img/icon_maps/257.png')">Sanitario ecológico</mat-checkbox>
+              <mat-checkbox [(ngModel)]="chk_257" color="primary" (change)="filtros($event, 262, 'assets/img/icon_maps/257.png')">Fenómeno Sanitario-Ecológico</mat-checkbox>
               <br />
-              <mat-checkbox [(ngModel)]="chk_258" color="primary" (change)="filtros($event, 263, 'assets/img/icon_maps/258.png')">Riesgos socio-organizativos</mat-checkbox>
+              <mat-checkbox [(ngModel)]="chk_258" color="primary" (change)="filtros($event, 263, 'assets/img/icon_maps/258.png')">Riesgos Socio-Organizativos</mat-checkbox>
               <br />
             </mat-expansion-panel>
             <mat-expansion-panel>
@@ -646,8 +646,8 @@
                 <mat-checkbox [(ngModel)]="chk_260" color="primary" (change)="filtros($event, 265, 'assets/img/icon_maps/254.png')">Fenómeno Geológico</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_261" color="primary" (change)="filtros($event, 266, 'assets/img/icon_maps/255.png')">Fenómenos Hidrometeorológicos</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_262" color="primary" (change)="filtros($event, 267, 'assets/img/icon_maps/256.png')">Fenómenos Químico-Tecnológicos</mat-checkbox><br />
-                <mat-checkbox [(ngModel)]="chk_263" color="primary" (change)="filtros($event, 268, 'assets/img/icon_maps/257.png')">Sanitario ecológico</mat-checkbox><br />
-                <mat-checkbox [(ngModel)]="chk_264" color="primary" (change)="filtros($event, 269, 'assets/img/icon_maps/258.png')">Riesgos socio-organizativos</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_263" color="primary" (change)="filtros($event, 268, 'assets/img/icon_maps/257.png')">Fenómeno Sanitario-Ecológico</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_264" color="primary" (change)="filtros($event, 269, 'assets/img/icon_maps/258.png')">Riesgos Socio-Organizativos</mat-checkbox><br />
                 <br />
               </mat-expansion-panel>
             </mat-expansion-panel>
@@ -675,8 +675,8 @@
                 <mat-checkbox [(ngModel)]="chk_267" color="primary" (change)="filtros($event, 272, 'assets/img/icon_maps/254.png')">Fenómeno Geológico</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_268" color="primary" (change)="filtros($event, 273, 'assets/img/icon_maps/255.png')">Fenómenos Hidrometeorológicos</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_269" color="primary" (change)="filtros($event, 274, 'assets/img/icon_maps/256.png')">Fenómenos Químico-Tecnológicos</mat-checkbox><br />
-                <mat-checkbox [(ngModel)]="chk_270" color="primary" (change)="filtros($event, 275, 'assets/img/icon_maps/257.png')">Sanitario ecológico</mat-checkbox><br />
-                <mat-checkbox [(ngModel)]="chk_271" color="primary" (change)="filtros($event, 276, 'assets/img/icon_maps/258.png')">Riesgos socio-organizativos</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_270" color="primary" (change)="filtros($event, 275, 'assets/img/icon_maps/257.png')">Fenómeno Sanitario-Ecológico</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_271" color="primary" (change)="filtros($event, 276, 'assets/img/icon_maps/258.png')">Riesgos Socio-Organizativos</mat-checkbox><br />
               </mat-expansion-panel>
               <br />
               <mat-checkbox [(ngModel)]="chk_272" color="primary" (change)="filtros($event, 277, 'assets/img/icon_maps/272.png')">¿Cuenta con personal capacitado?</mat-checkbox><br />
@@ -690,11 +690,86 @@
                   <b>Estudio de percepción</b>
                 </mat-panel-title>
               </mat-expansion-panel-header>
-              <mat-checkbox [(ngModel)]="chk_alcohol" color="primary">Estudio de Consumo de alcohol en vía pública </mat-checkbox><br />
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Estudio de Consumo de alcohol en vía pública</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_consumo" color="primary">Consumo de ALCOHOL por…</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_via_public" color="primary">Hay CONSUMO DE ALCOHOL en vía pública en la colonia</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_riesgos" color="primary">Riesgos Causados por el consumo de alcohol</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_frecuencia_ocurre" color="primary">Frecuencia con la que ocurre problemas por CONSUMO DE <br />ALCOHOL</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_vecinos" color="primary">¿Los vecinos de su colonia se organizan para prevenir <br />el consumo de alcohol en vía pública?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_sexo_entre" color="primary">Sexo del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_edad_entre" color="primary">Edad del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_ingresos" color="primary">Ingresos mensuales del entrevistado</mat-checkbox><br />
+              </mat-expansion-panel>
+
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Estudio de Comercio en vía pública</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_c_via_publica" color="primary">¿Hay COMERCIO EN VÍA PÚBLICA en la colonia?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_c_servicio" color="primary">Servicios y/o productos que ofrecen...</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_c_nivel" color="primary">Nivel de afectación por COMERCIO EN VÍA PÚBLICA por...</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_c_sexo" color="primary">Sexo del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_c_edad" color="primary">Edad del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_c_ingresos" color="primary">Ingresos mensuales del entrevistado</mat-checkbox><br />
+              </mat-expansion-panel>
+
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Estudio de Violencia de Género</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_g_situaciones" color="primary">¿Se han presentado situaciones de VIOLENCIA en la Colonia?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_tipo" color="primary">Tipos de violencia que se han presentado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_recibido" color="primary">¿Ha recibido agresiones verbales en la calle o el <br />transporter público?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_presentado" color="primary">¿Se han presentado casos de asesinatos de mujeres en su colonia?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_programas" color="primary">Qué tanto interés tienen en participar en programas o acciones para<br /> prevenir y combatir la violencia contra las mujeres</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_sexo" color="primary">Sexo del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_edad" color="primary">Edad del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_ingresos" color="primary">Ingresos mensuales del entrevistado</mat-checkbox><br />
+              </mat-expansion-panel>
+
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Estudio de percepción Seguridad </b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_s_seguro" color="primary">¿Qué tan seguro se siente en la COLONIA donde vive?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_s_confianza" color="primary">¿Qué tanta confianza siente de caminar solo(a) <br />por las calles de su colonia, sin temor a sufrir algún delito?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_s_frecuencia" color="primary">Frecuencia con la que se presentan en su colonia...</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_s_sexo" color="primary">Sexo del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_s_edad" color="primary">Edad del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_s_ingresos" color="primary">Ingresos mensuales del entrevistado</mat-checkbox><br />
+              </mat-expansion-panel>
+
+              <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <b>Estudio de percepción de Riesgos</b>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <mat-checkbox [(ngModel)]="chk_r_nivel" color="primary">Nivel de afectación por...</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_r_efectacion" color="primary">Nivel de afectación tras un riesgo en el servicio de...</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_r_evacuado" color="primary">¿Ha sido evacuado a causa de algún peligro o amenaza?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_r_colonia" color="primary">¿En su colonia cuentan con sistemas de alarma frente algún siniestro?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_r_sexo" color="primary">Sexo del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_r_edad" color="primary">Edad del entrevistado</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_r_ingresos" color="primary">Ingresos mensuales del entrevistado</mat-checkbox><br />
+              </mat-expansion-panel>
+
+              <!--<mat-checkbox [(ngModel)]="chk_alcohol" color="primary">Estudio de Consumo de alcohol en vía pública </mat-checkbox><br />
               <mat-checkbox [(ngModel)]="chk_comercio" color="primary">Estudio de Comercio en vía pública </mat-checkbox><br />
               <mat-checkbox [(ngModel)]="chk_genero" color="primary">Estudio de Violencia de Género </mat-checkbox><br />
               <mat-checkbox [(ngModel)]="chk_seguridad" color="primary">Estudio de percepción Seguridad </mat-checkbox><br />
-              <mat-checkbox [(ngModel)]="chk_per_riesgos" color="primary">Estudio de percepción de Riesgos </mat-checkbox><br />
+              <mat-checkbox [(ngModel)]="chk_per_riesgos" color="primary">Estudio de percepción de Riesgos </mat-checkbox><br />-->
             </mat-expansion-panel>
           </mat-expansion-panel>
         </mat-accordion>
@@ -762,13 +837,51 @@
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa1_lomas.kml'" *ngIf="chk_lomas"> </agm-kml-layer>
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa2_transiciones.kml'" *ngIf="chk_transicion"> </agm-kml-layer>
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa3_lacustre.kml'" *ngIf="chk_lacustre"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/poligonos_vc3.kml'" *ngIf="chk_vc"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/consumo_alcohol.kml'" *ngIf="chk_alcohol"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/comercio_via_publica.kml'" *ngIf="chk_comercio"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/percepción_riesgos3.kml'" *ngIf="chk_per_riesgos"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/percepción_seguridad.kml'" *ngIf="chk_seguridad"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/violencia_genero.kml'" *ngIf="chk_genero"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/poligonos_censo_2010.kml'" *ngIf="chk_vc"> </agm-kml-layer>
+
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Consumo1.kml'" *ngIf="chk_consumo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Edad1.kml'" *ngIf="chk_edad_entre"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Via_publica.kml'" *ngIf="chk_via_public"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Frecuencia1.kml'" *ngIf="chk_frecuencia_ocurre"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Ingresos1.kml'" *ngIf="chk_ingresos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Vecinos1.kml'" *ngIf="chk_vecinos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Riesgos_causados1.kml'" *ngIf="chk_riesgos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Sexo1.kml'" *ngIf="chk_sexo_entre"> </agm-kml-layer>
+
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Hay_comercio.kml'" *ngIf="chk_c_via_publica"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Servicio_prod.kml'" *ngIf="chk_c_servicio"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Nivel_afectacion.kml'" *ngIf="chk_c_nivel"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Sexo.kml'" *ngIf="chk_c_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Edad.kml'" *ngIf="chk_c_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Ingreso.kml'" *ngIf="chk_c_ingresos"> </agm-kml-layer>
+
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Se_present.kml'" *ngIf="chk_g_situaciones"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Tipos_violencia.kml'" *ngIf="chk_g_tipo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Ha_recibido.kml'" *ngIf="chk_g_recibido"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Se_presentado.kml'" *ngIf="chk_g_presentado"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Que_interes.kml'" *ngIf="chk_g_programas"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Sexo.kml'" *ngIf="chk_g_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Edad.kml'" *ngIf="chk_g_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Ingreso1.kml'" *ngIf="chk_g_ingresos"> </agm-kml-layer>
+
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Que_tan_segu1.kml'" *ngIf="chk_s_seguro"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Que_tanta_confian1.kml'" *ngIf="chk_s_confianza"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Frecuencia1.kml'" *ngIf="chk_s_frecuencia"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Sexo1.kml'" *ngIf="chk_s_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Edad1.kml'" *ngIf="chk_s_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Ingresos1.kml'" *ngIf="chk_s_ingresos"> </agm-kml-layer>
+
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Nivel_afecta.kml'" *ngIf="chk_r_nivel"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Nivel_de_Afecta.kml'" *ngIf="chk_r_efectacion"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Ha_sido.kml'" *ngIf="chk_r_evacuado"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/En_colo.kml'" *ngIf="chk_r_colonia"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Sexo.kml'" *ngIf="chk_r_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Edad.kml'" *ngIf="chk_r_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Ingreso.kml'" *ngIf="chk_r_ingresos"> </agm-kml-layer>
+
       </agm-map>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
+
+

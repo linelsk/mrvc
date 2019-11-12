@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app",
-    "\\app\\views",
-    "\\app\\views\\mapa"
+    "\\app"
   ],
-  "SelectedNode": "\\app\\views\\mapa\\dialog-info.html",
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }

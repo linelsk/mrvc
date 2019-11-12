@@ -326,6 +326,51 @@ export class MapaComponent implements OnInit {
   public chk_trab: any;
   public isTest: boolean = false;
 
+  //Alcohol
+  public chk_consumo: any;
+  public chk_via_public: any;
+  public chk_riesgos: any;
+  public chk_frecuencia_ocurre: any;
+  public chk_vecinos: any;
+  public chk_sexo_entre: any;
+  public chk_edad_entre: any;
+  public chk_ingresos: any;
+
+  //Comercio
+  public chk_c_via_publica: any;
+  public chk_c_servicio: any;
+  public chk_c_nivel: any;
+  public chk_c_sexo: any;
+  public chk_c_edad: any;
+  public chk_c_ingresos: any;
+
+  //Genero
+  public chk_g_situaciones: any;
+  public chk_g_tipo: any;
+  public chk_g_recibido: any;
+  public chk_g_presentado: any;
+  public chk_g_programas: any;
+  public chk_g_sexo: any;
+  public chk_g_edad: any;
+  public chk_g_ingresos: any;
+
+  //Seguridad
+  public chk_s_seguro: any;
+  public chk_s_confianza: any;
+  public chk_s_frecuencia: any;
+  public chk_s_sexo: any;
+  public chk_s_edad: any;
+  public chk_s_ingresos: any;
+
+  //Riesgos
+  public chk_r_nivel: any;
+  public chk_r_efectacion: any;
+  public chk_r_evacuado: any;
+  public chk_r_colonia: any;
+  public chk_r_sexo: any;
+  public chk_r_edad: any;
+  public chk_r_ingresos: any;
+
   ///////////////
   mode = new FormControl('side');
   zoom: number = 12;
@@ -392,7 +437,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].direccion,
               "no_personas": response.result[i].noPersonas,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -413,7 +458,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].nombreDelAsentamientoUbicacionDelInmueble,
               "no_personas": response.result[i].personasQueLoOcupan,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -434,7 +479,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].direccion,
               "no_personas": response.result[i].noPersonas,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -455,7 +500,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].nombreDelAsentamientoUbicacionDelInmueble,
               "no_personas": response.result[i].personasQueLoOcupan,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -476,7 +521,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].direccion,
               "no_personas": response.result[i].noPersonas,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -497,7 +542,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].nombreDelAsentamientoUbicacionDelInmueble,
               "no_personas": response.result[i].personasQueLoOcupan,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -518,7 +563,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].direccion,
               "no_personas": response.result[i].noPersonas,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -534,12 +579,35 @@ export class MapaComponent implements OnInit {
               "id": response.result[i].id,
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
-              "nombre": response.result[i].nomVE1,
+              "nombre": response.result[i].nombre,
               "actividad": response.result[i].nombreAct,
+              "region": response.result[i].nombAsent,
+              "riesgo": response.result[i].nomVE1,
+              "riesgo_1": response.result[i].nomVE2,
+              "riesgo_2": response.result[i].nomVE3,
+              "riesgo_3": response.result[i].nomCenCom,
+              "riesgo_4": response.result[i].tipoAsent,
+              "riesgo_5": response.result[i].tipoCenCom,
+              "riesgo_6": response.result[i].tipoUniEco,
+              "riesgo_7": response.result[i].tipoVE1,
+              "riesgo_8": response.result[i].tipoVE2,
+              "riesgo_9": response.result[i].tipoVE3,
+              "riesgo_10": response.result[i].tipoVial,
+              "riesgo_11": response.result[i].razSocial, 
               "direccion": response.result[i].direccion,
+              "riesgo_12": response.result[i].numeroExt,
+              "riesgo_13": response.result[i].numeroInt,
+              "riesgo_14": response.result[i].numLocal,
+              "riesgo_15": response.result[i].letraExt,
+              "riesgo_16": response.result[i].letraInt,
+              "riesgo_17": response.result[i].edificio,
+              "riesgo_18": response.result[i].edificioE,
+              "riesgo_19": response.result[i].codPostal,
+              "riesgo_20": response.result[i].codigoAct,
+              "riesgo_21": response.result[i].fechaAlta,
               "no_personas": response.result[i].perOcu,
               "tipo": obj,
-              "type": 1,
+              "type": 29,
               "url": url,
               "draggable": false
             });
@@ -550,17 +618,41 @@ export class MapaComponent implements OnInit {
         }
 
         if (obj > 16 && obj < 33) {
+          console.log(response.result);
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
               "id": response.result[i].id,
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
-              "nombre": response.result[i].razSocial == "" ? response.result[i].nomEstab : response.result[i].razSocial,
+              "nombre": response.result[i].nombre,
               "actividad": response.result[i].nombreAct,
-              "direccion": response.result[i].nombAsent + ", " + response.result[i].numeroExt,
+              "region": response.result[i].nombAsent,
+              "riesgo": response.result[i].nomVE1,
+              "riesgo_1": response.result[i].nomVE2,
+              "riesgo_2": response.result[i].nomVE3,
+              "riesgo_3": response.result[i].nomCenCom,
+              "riesgo_4": response.result[i].tipoAsent,
+              "riesgo_5": response.result[i].tipoCenCom,
+              "riesgo_6": response.result[i].tipoUniEco,
+              "riesgo_7": response.result[i].tipoVE1,
+              "riesgo_8": response.result[i].tipoVE2,
+              "riesgo_9": response.result[i].tipoVE3,
+              "riesgo_10": response.result[i].tipoVial,
+              "riesgo_11": response.result[i].razSocial,
+              "direccion": response.result[i].direccion,
+              "riesgo_12": response.result[i].numeroExt,
+              "riesgo_13": response.result[i].numeroInt,
+              "riesgo_14": response.result[i].numLocal,
+              "riesgo_15": response.result[i].letraExt,
+              "riesgo_16": response.result[i].letraInt,
+              "riesgo_17": response.result[i].edificio,
+              "riesgo_18": response.result[i].edificioE,
+              "riesgo_19": response.result[i].codPostal,
+              "riesgo_20": response.result[i].codigoAct,
+              "riesgo_21": response.result[i].fechaAlta,
               "no_personas": response.result[i].perOcu,
               "tipo": obj,
-              "type": 1,
+              "type": 29,
               "url": url,
               "draggable": false
             });
@@ -576,12 +668,46 @@ export class MapaComponent implements OnInit {
               "id": response.result[i].id,
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
-              "nombre": response.result[i].razSocial,
+              "nombre": response.result[i].nombAsent,
               "actividad": response.result[i].nombreAct,
-              "direccion": response.result[i].nombAsent + ", " + response.result[i].numeroExt,
+              "region": response.result[i].ageb,
+              "riesgo": response.result[i].nomVE1,
+              "riesgo_1": response.result[i].nomVE2,
+              "riesgo_2": response.result[i].nomVE3,
+              "riesgo_3": response.result[i].nomCenCom,
+              "riesgo_4": response.result[i].tipoAsent,
+              "riesgo_5": response.result[i].tipoCenCom,
+              "riesgo_6": response.result[i].tipoUniEco,
+              "riesgo_7": response.result[i].tipoVE1,
+              "riesgo_8": response.result[i].tipoVE2,
+              "riesgo_9": response.result[i].tipoVE3,
+              "riesgo_10": response.result[i].tipoVial,
+              "riesgo_11": response.result[i].razSocial,
+              "direccion": response.result[i].direccion,
+              "riesgo_12": response.result[i].numeroExt,
+              "riesgo_13": response.result[i].numeroInt,
+              "riesgo_14": response.result[i].numLocal,
+              "riesgo_15": response.result[i].letraExt,
+              "riesgo_16": response.result[i].letraInt,
+              "riesgo_17": response.result[i].edificio,
+              "riesgo_18": response.result[i].edificioE,
+              "riesgo_19": response.result[i].codPostal,
+              "riesgo_20": response.result[i].codigoAct,
+              "riesgo_21": response.result[i].cveEnt,
+              "riesgo_22": response.result[i].cveLoc,
+              "riesgo_23": response.result[i].cveMun,
+              "riesgo_24": response.result[i].entidad,
+              "riesgo_25": response.result[i].localidad,
+              "riesgo_26": response.result[i].manzana,
+              "riesgo_27": response.result[i].municipio,
+              "riesgo_28": response.result[i].nomVial,
+              "riesgo_29": response.result[i].telefono,
+              "riesgo_30": response.result[i].correoelec,
+              "riesgo_31": response.result[i].www,
+              "riesgo_32": response.result[i].fechaAlta,
               "no_personas": response.result[i].perOcu,
               "tipo": obj,
-              "type": 1,
+              "type": 22,
               "url": url,
               "draggable": false
             });
@@ -600,7 +726,10 @@ export class MapaComponent implements OnInit {
               "nombre": response.result[i].nombre,
               "actividad": response.result[i].descripcion,
               "direccion": response.result[i].taxonomia,
-              "no_personas": "0",
+              "riesgo": response.result[i].intensidad,
+              "riesgo_1": response.result[i].label,
+              "riesgo_2": response.result[i].region,
+              "riesgo_3": response.result[i].rpve,
               "tipo": obj,
               "type": 2,
               "url": url,
@@ -620,7 +749,9 @@ export class MapaComponent implements OnInit {
               "longitud": response.result[i].longitud,
               "nombre": response.result[i].nomRefuT,
               "actividad": response.result[i].usoInmueble,
-              "direccion": response.result[i].calleYNúmero + ", " + response.result[i].colonia,
+              "riesgo": response.result[i].calleYNúmero,
+              "riesgo_1": response.result[i].colonia,
+              "riesgo_2": response.result[i].label,
               "no_personas": response.result[0].capacidad,
               "region": response.result[0].region,
               "fuente": response.result[0].fuente,
@@ -641,12 +772,35 @@ export class MapaComponent implements OnInit {
               "id": response.result[i].id,
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
-              "nombre": response.result[i].nomEstab == "" ? response.result[i].razSocial : response.result[i].nomEstab,
+              "nombre": response.result[i].nomEstab,
               "actividad": response.result[i].nombreAct,
-              "direccion": response.result[i].nomVE3 + ", " + response.result[i].nombAsent + ", " + response.result[i].numeroExt,
+              "region": response.result[i].nombAsent,
+              "riesgo": response.result[i].nomVE1,
+              "riesgo_1": response.result[i].nomVE2,
+              "riesgo_2": response.result[i].nomVE3,
+              "riesgo_3": response.result[i].nomCenCom,
+              "riesgo_4": response.result[i].tipoAsent,
+              "riesgo_5": response.result[i].tipoCenCom,
+              "riesgo_6": response.result[i].tipoUniEco,
+              "riesgo_7": response.result[i].tipoVE1,
+              "riesgo_8": response.result[i].tipoVE2,
+              "riesgo_9": response.result[i].tipoVE3,
+              "riesgo_10": response.result[i].tipoVial,
+              "riesgo_11": response.result[i].razSocial,
+              "direccion": response.result[i].direccion,
+              "riesgo_12": response.result[i].numeroExt,
+              "riesgo_13": response.result[i].numeroInt,
+              "riesgo_14": response.result[i].numLocal,
+              "riesgo_15": response.result[i].letraExt,
+              "riesgo_16": response.result[i].letraInt,
+              "riesgo_17": response.result[i].edificio,
+              "riesgo_18": response.result[i].edificioE,
+              "riesgo_19": response.result[i].codPostal,
+              "riesgo_20": response.result[i].codigoAct,
+              "riesgo_21": response.result[i].fechaAlta,
               "no_personas": response.result[i].perOcu,
               "tipo": obj,
-              "type": 1,
+              "type": 29,
               "url": url,
               "draggable": false
             });
@@ -725,7 +879,35 @@ export class MapaComponent implements OnInit {
           }, 500);
         }
 
-        if (obj > 82 && obj < 94) {
+        if (obj === 83) {
+          for (var i = 0; i < response.result.length; i++) {
+            this.markers.push({
+              "id": response.result[i].id,
+              "latitud": response.result[i].latitud,
+              "longitud": response.result[i].longitud,
+              "nombre": response.result[i].alcaldía == null ? response.result[i].alcaldia : response.result[i].alcaldía,
+              "actividad": response.result[i].usoDescripcion,
+              "direccion": response.result[i].calle + " " + response.result[i].noExterno + ", " + response.result[i].colonia + ", " + response.result[i].codigoPostal,
+              "no_personas": response.result[i].superficie,
+              "region": response.result[i].altura,
+              "riesgo": response.result[i].areaLibre,
+              "riesgo_1": response.result[i].cuentaCatastral,
+              "riesgo_2": response.result[i].densidadDescripcion,
+              "riesgo_3": response.result[i].minimoVivienda,
+              "riesgo_4": response.result[i].niveles,
+              "riesgo_5": response.result[i].ligaCiudadmx,
+              "tipo": obj,
+              "type": 26,
+              "url": url,
+              "draggable": false
+            });
+          }
+          setTimeout(() => {
+            this.loading = false;
+          }, 500);
+        }
+
+        if (obj > 83 && obj < 94) {
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
               "id": response.result[i].id,
@@ -736,7 +918,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].calle + " " + response.result[i].noExterno + ", " + response.result[i].colonia + ", " + response.result[i].codigoPostal,
               "no_personas": response.result[i].superficie,
               "tipo": obj,
-              "type": 5,
+              "type": 26,
               "url": url,
               "draggable": false
             });
@@ -778,7 +960,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].direccion,
               "no_personas": response.result[i].noPersonas,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -799,7 +981,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].nombreDelAsentamientoUbicacionDelInmueble,
               "no_personas": response.result[i].personasQueLoOcupan,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -820,7 +1002,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].direccion,
               "no_personas": response.result[i].noPersonas,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -841,7 +1023,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].nombreDelAsentamientoUbicacionDelInmueble,
               "no_personas": response.result[i].personasQueLoOcupan,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -862,7 +1044,7 @@ export class MapaComponent implements OnInit {
               "direccion": response.result[i].direccion,
               "no_personas": response.result[i].noPersonas,
               "tipo": obj,
-              "type": 1,
+              "type": 25,
               "url": url,
               "draggable": false
             });
@@ -929,6 +1111,7 @@ export class MapaComponent implements OnInit {
               "no_personas": response.result[i].añoHecho == null ? response.result[i].añoHechos : response.result[i].añoHecho,
               "region": response.result[i].mesHecho,
               "fuente": response.result[i].coloniaHechos,
+              "riesgo": response.result[i].aoInicio,
               "tipo": obj,
               "type": 8,
               "url": url,
@@ -996,7 +1179,7 @@ export class MapaComponent implements OnInit {
               "no_personas": "",
               "region": "",
               "tipo": obj,
-              "type": 11,
+              "type": 21,
               "url": url,
               "draggable": false
             });
@@ -1012,14 +1195,14 @@ export class MapaComponent implements OnInit {
               "id": response.result[i].id,
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
-              "nombre": response.result[i].alcaldía,
+              "nombre": response.result[i].direccion,
               "actividad": response.result[i].tipoRiego,
-              "direccion": response.result[i].direccion,
+              "direccion": response.result[i].alcaldía,
               "no_personas": "0",
               "region": response.result[i].territorial,
               "fuente": response.result[i].tipoFenomeno,
               "tipo": obj,
-              "type": 11,
+              "type": 27,
               "url": url,
               "draggable": false
             });
@@ -1059,12 +1242,16 @@ export class MapaComponent implements OnInit {
               "id": response.result[i].id,
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
-              "nombre": response.result[i].alcaldía,
-              "actividad": response.result[i].tipoRiego,
-              "direccion": response.result[i].direccion,
-              "no_personas": "0",
-              "region": response.result[i].territorial,
-              "fuente": response.result[i].tipoFenomeno,
+              "nombre": "Riesgos identificados", //response.result[i].alcaldía,
+              "riesgo": response.result[i].sismo,
+              "riesgo_1": response.result[i].terremoto,
+              "riesgo_2": response.result[i].terremoto,
+              "riesgo_3": response.result[i].vulcanismo,
+              "riesgo_4": response.result[i].caidaCeniza,
+              "riesgo_5": response.result[i].deslizamientoSuelo,
+              "riesgo_6": response.result[i].flujosLodo,
+              "riesgo_7": response.result[i].agrietamientoConstrucciones,
+              "riesgo_8": response.result[i].agrietamientoPisos,
               "tipo": obj,
               "type": 11,
               "url": url,
@@ -1116,6 +1303,7 @@ export class MapaComponent implements OnInit {
               "riesgo": response.result[i].incendiosUrbano,
               "riesgo_1": response.result[i].intoxicaciones,
               "riesgo_3": response.result[i].radiacion,
+              "riesgo_4": response.result[i].explosiones,
               "tipo": obj,
               "type": 14,
               "url": url,
@@ -1134,15 +1322,11 @@ export class MapaComponent implements OnInit {
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
               "nombre": "Riesgos Identificados",
-              "riesgo_2": response.result[i].agrietamientoConstrucciones,
-              "direccion": response.result[i].agrietamientoPisos,
-              "no_personas": response.result[i].caidaCeniza,
-              "region": response.result[i].deslizamientoSuelo,
-              "fuente": response.result[i].flujosLodo,
-              "riesgo": response.result[i].sismo,
-              "riesgo_1": response.result[i].temblor,
-              "riesgo_3": response.result[i].terremoto,
-              "riesgo_4": response.result[i].vulcanismo,
+              "riesgo": response.result[i].contaminacionAgua,
+              "riesgo_1": response.result[i].contaminacionAire,
+              "riesgo_2": response.result[i].contaminacionAuditiva,
+              "riesgo_3": response.result[i].contaminacionSuelo,
+              "riesgo_4": response.result[i].contaminacionVisual,
               "tipo": obj,
               "type": 15,
               "url": url,
@@ -1161,17 +1345,27 @@ export class MapaComponent implements OnInit {
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
               "nombre": "Riesgos Identificados",
-              "riesgo_2": response.result[i].agrietamientoConstrucciones,
-              "direccion": response.result[i].agrietamientoPisos,
-              "no_personas": response.result[i].caidaCeniza,
-              "region": response.result[i].deslizamientoSuelo,
-              "fuente": response.result[i].flujosLodo,
-              "riesgo": response.result[i].sismo,
-              "riesgo_1": response.result[i].temblor,
-              "riesgo_3": response.result[i].terremoto,
-              "riesgo_4": response.result[i].vulcanismo,
+              "riesgo": response.result[i].bardasMalEstado,
+              "riesgo_1": response.result[i].arbolesGrandes,
+              "riesgo_2": response.result[i].postesTelefonicos,
+              "riesgo_3": response.result[i].callesPesimoEstado,
+              "riesgo_4": response.result[i].alcantarilladoDanado,
+              "riesgo_5": response.result[i].bacheadoCondiciones,
+              "riesgo_6": response.result[i].coladerasBasura,
+              "riesgo_7": response.result[i].esquinasCalle,
+              "riesgo_8": response.result[i].esquinasCalleMalEstado,
+              "riesgo_9": response.result[i].callesAv,
+              "riesgo_10": response.result[i].terrenosBaldios,
+              "riesgo_11": response.result[i].vialidadInterrumpida,
+              "riesgo_12": response.result[i].parquesAbandono,
+              "riesgo_13": response.result[i].negociosRepresentan,
+              "riesgo_14": response.result[i].negociosEmpresas,
+              "fuente": response.result[i].callesCerradas,
+              "no_personas": response.result[i].riesgoElectrico,
+              "region": response.result[i].socavon,
+              "direccion": response.result[i].mufa,
               "tipo": obj,
-              "type": 15,
+              "type": 28,
               "url": url,
               "draggable": false
             });
@@ -1204,15 +1398,16 @@ export class MapaComponent implements OnInit {
         if (obj === 271) {
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
-              "id": response.result[i].id,
-              "latitud": response.result[i].latitud,
-              "longitud": response.result[i].longitud,
-              "nombre": response.result[i].nombreResponsableEstablecimiento,
-              "riesgo_2": response.result[i].numCamasHabitacionesLocales,
-              "direccion": response.result[i].numPersonasAtiendeDia,
-              "no_personas": response.result[i].numPersonasTrabajanInmueble,
-              "region": response.result[i].perfilPersonas,
-              "fuente": response.result[i].tipoInmueble,
+              "id": response.result[i].a.id,
+              "latitud": response.result[i].a.latitud,
+              "longitud": response.result[i].a.longitud,
+              "nombre": response.result[i].nombre,
+              "riesgo": response.result[i].a.nombreResponsableEstablecimiento,
+              "riesgo_2": response.result[i].a.numCamasHabitacionesLocales,
+              "direccion": response.result[i].a.numPersonasAtiendeDia,
+              "no_personas": response.result[i].a.numPersonasTrabajanInmueble,
+              "region": response.result[i].a.perfilPersonas,
+              "fuente": response.result[i].a.tipoInmueble,
               "tipo": obj,
               "type": 17,
               "url": url,
@@ -1227,21 +1422,21 @@ export class MapaComponent implements OnInit {
         if (obj === 272) {
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
-              "id": response.result[i].id,
-              "latitud": response.result[i].latitud,
-              "longitud": response.result[i].longitud,
-              "nombre": "Riesgos Identificados",
-              "riesgo_2": response.result[i].agrietamientoConstrucciones,
-              "direccion": response.result[i].agrietamientoPisos,
-              "no_personas": response.result[i].caidaCeniza,
-              "region": response.result[i].deslizamientoSuelo,
-              "fuente": response.result[i].flujosLodo,
-              "riesgo": response.result[i].sismo,
-              "riesgo_1": response.result[i].temblor,
-              "riesgo_3": response.result[i].terremoto,
-              "riesgo_4": response.result[i].vulcanismo,
+              "id": response.result[i].a.id,
+              "latitud": response.result[i].a.latitud,
+              "longitud": response.result[i].a.longitud,
+              "nombre": response.result[i].nombre,
+              "riesgo": response.result[i].a.sismo,
+              "riesgo_1": response.result[i].a.terremoto,
+              "riesgo_2": response.result[i].a.terremoto,
+              "riesgo_3": response.result[i].a.vulcanismo,
+              "riesgo_4": response.result[i].a.caidaCeniza,
+              "riesgo_5": response.result[i].a.deslizamientoSuelo,
+              "riesgo_6": response.result[i].a.flujosLodo,
+              "riesgo_7": response.result[i].a.agrietamientoConstrucciones,
+              "riesgo_8": response.result[i].a.agrietamientoPisos,
               "tipo": obj,
-              "type": 15,
+              "type": 11,
               "url": url,
               "draggable": false
             });
@@ -1254,17 +1449,17 @@ export class MapaComponent implements OnInit {
         if (obj === 273) {
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
-              "id": response.result[i].id,
-              "latitud": response.result[i].latitud,
-              "longitud": response.result[i].longitud,
-              "nombre": "Riesgos Identificados",
-              "riesgo_2": response.result[i].granizadas,
-              "direccion": response.result[i].inundaciones,
-              "no_personas": response.result[i].inversionTermica,
-              "region": response.result[i].lluviaTorrencial,
-              "fuente": response.result[i].nevadas,
-              "riesgo": response.result[i].escasesAgua,
-              "riesgo_1": response.result[i].sequia,
+              "id": response.result[i].a.id,
+              "latitud": response.result[i].a.latitud,
+              "longitud": response.result[i].a.longitud,
+              "nombre": response.result[i].nombre,
+              "riesgo_2": response.result[i].a.granizadas,
+              "direccion": response.result[i].a.inundaciones,
+              "no_personas": response.result[i].a.inversionTermica,
+              "region": response.result[i].a.lluviaTorrencial,
+              "fuente": response.result[i].a.nevadas,
+              "riesgo": response.result[i].a.escasesAgua,
+              "riesgo_1": response.result[i].a.sequia,
               "tipo": obj,
               "type": 13,
               "url": url,
@@ -1279,18 +1474,19 @@ export class MapaComponent implements OnInit {
         if (obj === 274) {
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
-              "id": response.result[i].id,
-              "latitud": response.result[i].latitud,
-              "longitud": response.result[i].longitud,
-              "nombre": "Riesgos Identificados",
-              "riesgo_2": response.result[i].derrameHidrocarburos,
-              "direccion": response.result[i].envenenamiento,
-              "no_personas": response.result[i].epidemias,
-              "region": response.result[i].fugasGas,
-              "fuente": response.result[i].incendiosForestal,
-              "riesgo": response.result[i].incendiosUrbano,
-              "riesgo_1": response.result[i].intoxicaciones,
-              "riesgo_3": response.result[i].radiacion,
+              "id": response.result[i].a.id,
+              "latitud": response.result[i].a.latitud,
+              "longitud": response.result[i].a.longitud,
+              "nombre": response.result[i].nombre,
+              "riesgo_2": response.result[i].a.derrameHidrocarburos,
+              "direccion": response.result[i].a.envenenamiento,
+              "no_personas": response.result[i].a.epidemias,
+              "region": response.result[i].a.fugasGas,
+              "fuente": response.result[i].a.incendiosForestal,
+              "riesgo": response.result[i].a.incendiosUrbano,
+              "riesgo_1": response.result[i].a.intoxicaciones,
+              "riesgo_3": response.result[i].a.radiacion,
+              "riesgo_4": response.result[i].a.explosiones,
               "tipo": obj,
               "type": 14,
               "url": url,
@@ -1305,17 +1501,17 @@ export class MapaComponent implements OnInit {
         if (obj === 275) {
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
-              "id": response.result[i].id,
-              "latitud": response.result[i].latitud,
-              "longitud": response.result[i].longitud,
-              "nombre": "Riesgos Identificados",
-              "riesgo_2": response.result[i].bardasMuyMalEstado,
-              "direccion": response.result[i].contaminacionAgua,
-              "no_personas": response.result[i].contaminacionAire,
-              "region": response.result[i].contaminacionSuelo,
-              "fuente": response.result[i].contaminacionVisual,
+              "id": response.result[i].a.id,
+              "latitud": response.result[i].a.latitud,
+              "longitud": response.result[i].a.longitud,
+              "nombre": response.result[i].nombre,
+              "riesgo": response.result[i].a.contaminacionAgua,
+              "riesgo_1": response.result[i].a.contaminacionAire,
+              "riesgo_2": response.result[i].a.bardasMuyMalEstado,
+              "riesgo_3": response.result[i].a.contaminacionSuelo,
+              "riesgo_4": response.result[i].a.contaminacionVisual,
               "tipo": obj,
-              "type": 18,
+              "type": 15,
               "url": url,
               "draggable": false
             });
@@ -1328,17 +1524,31 @@ export class MapaComponent implements OnInit {
         if (obj === 276) {
           for (var i = 0; i < response.result.length; i++) {
             this.markers.push({
-              "id": response.result[i].id,
-              "latitud": response.result[i].latitud,
-              "longitud": response.result[i].longitud,
-              "nombre": response.result[i].nombreResponsableEstablecimiento,
-              "riesgo_2": response.result[i].numCamasHabitacionesLocales,
-              "direccion": response.result[i].numPersonasAtiendeDia,
-              "no_personas": response.result[i].numPersonasTrabajanInmueble,
-              "region": response.result[i].perfilPersonas,
-              "fuente": response.result[i].tipoInmueble,
+              "id": response.result[i].a.id,
+              "latitud": response.result[i].a.latitud,
+              "longitud": response.result[i].a.longitud,
+              "nombre": response.result[i].nombre,
+              "riesgo": response.result[i].a.bardasMalEstado,
+              "riesgo_1": response.result[i].a.arbolesMuyGrandes,
+              "riesgo_2": response.result[i].a.postesMalEstado,
+              "riesgo_3": response.result[i].a.callesPesimoEstado,
+              "riesgo_4": response.result[i].a.alcantarilladoDanado,
+              "riesgo_5": response.result[i].a.bacheadoCondicionesDeplorables,
+              "riesgo_6": response.result[i].a.coladerasObstruidas,
+              "riesgo_7": response.result[i].a.callesAlumbradoInsuficiente,
+              "riesgo_8": response.result[i].a.esquinasCalleMalEstado,
+              "riesgo_9": response.result[i].a.terrenosBaldiosBasura,
+              "riesgo_10": response.result[i].a.vialidadInterrumpidaRejas,
+              "riesgo_11": response.result[i].a.parquesAbandono,
+              "riesgo_12": response.result[i].a.negociosRepresentenRiesgo,
+              "riesgo_13": response.result[i].a.callesInvadidasGruposDelictivos,
+              "riesgo_14": response.result[i].a.negociosContribuyanContaminación,
+              "fuente": response.result[i].a.callesCerradasCompleto,
+              "no_personas": response.result[i].a.riesgoElectrico,
+              "region": response.result[i].a.socavn,
+              "direccion": response.result[i].a.mufa,
               "tipo": obj,
-              "type": 17,
+              "type": 28,
               "url": url,
               "draggable": false
             });
@@ -1398,27 +1608,10 @@ export class MapaComponent implements OnInit {
               "latitud": response.result[i].latitud,
               "longitud": response.result[i].longitud,
               "nombre": "¿Tiene protocolo de actuación en caso de riesgo?",
-              "riesgo_14": response.result[i].alcantarilladoDanado,
-              "riesgo_2": response.result[i].arbolesMuyGrandes,
-              "direccion": response.result[i].bacheadoCondicionesDeplorables,
-              "no_personas": response.result[i].bardasMalEstado,
-              "region": response.result[i].callesAlumbradoInsuficiente,
-              "fuente": response.result[i].callesCerradasCompleto,
-              "riesgo": response.result[i].callesInvadidasGruposDelictivos,
-              "riesgo_1": response.result[i].callesPesimoEstado,
-              "riesgo_3": response.result[i].coladerasObstruidas,
-              "riesgo_4": response.result[i].esquinasCalleMalEstado,
-              "riesgo_5": response.result[i].mufa,
-              "riesgo_6": response.result[i].negociosContribuyanContaminación,
-              "riesgo_7": response.result[i].negociosRepresentenRiesgo,
-              "riesgo_8": response.result[i].parquesAbandono,
-              "riesgo_9": response.result[i].postesMalEstado,
-              "riesgo_10": response.result[i].riesgoElectrico,
-              "riesgo_11": response.result[i].socavn,
-              "riesgo_12": response.result[i].terrenosBaldiosBasura,
-              "riesgo_13": response.result[i].vialidadInterrumpidaRejas,
+              "direccion": response.result[i].tieneProtocoloActuacionCasaRiesgo,
+              "no_personas": "0",
               "tipo": obj,
-              "type": 20,
+              "type": 19,
               "url": url,
               "draggable": false
             });
@@ -1524,6 +1717,24 @@ interface marker {
   riesgo_12?: string;
   riesgo_13?: string;
   riesgo_14?: string;
+  riesgo_15?: string;
+  riesgo_16?: string;
+  riesgo_17?: string;
+  riesgo_18?: string;
+  riesgo_19?: string;
+  riesgo_20?: string;
+  riesgo_21?: string;
+  riesgo_22?: string;
+  riesgo_23?: string;
+  riesgo_24?: string;
+  riesgo_25?: string;
+  riesgo_26?: string;
+  riesgo_27?: string;
+  riesgo_28?: string;
+  riesgo_29?: string;
+  riesgo_30?: string;
+  riesgo_31?: string;
+  riesgo_32?: string;
   tipo: number;
   type: number;
   url: string;
