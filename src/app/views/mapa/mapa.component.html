@@ -9,16 +9,16 @@
         <br />
         <mat-accordion>
           <!--<mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Serivicios
-              </mat-panel-title>
-            </mat-expansion-panel-header>
-            <mat-checkbox [(ngModel)]="chk_1" color="primary" (change)="filtros($event, 1, 'assets/img/icon_maps/1.png')">1. Servicios de alojamiento temporal y preparación<br />de alimentos y bebidas</mat-checkbox>
-            <br />
-            <mat-checkbox [(ngModel)]="chk_2" color="primary" (change)="filtros($event, 2, 'assets/img/icon_maps/2.png')">2. Servicios de esparcimiento culturales y deportivos,<br />y otros servicios recreativos</mat-checkbox>
-            <br />
-          </mat-expansion-panel>-->
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Serivicios
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-checkbox [(ngModel)]="chk_1" color="primary" (change)="filtros($event, 1, 'assets/img/icon_maps/1.png')">1. Servicios de alojamiento temporal y preparación<br />de alimentos y bebidas</mat-checkbox>
+      <br />
+      <mat-checkbox [(ngModel)]="chk_2" color="primary" (change)="filtros($event, 2, 'assets/img/icon_maps/2.png')">2. Servicios de esparcimiento culturales y deportivos,<br />y otros servicios recreativos</mat-checkbox>
+      <br />
+    </mat-expansion-panel>-->
           <mat-expansion-panel (opened)="panelOpenState = true"
                                (closed)="panelOpenState = false">
             <mat-expansion-panel-header>
@@ -726,10 +726,10 @@
                     <b>Estudio de Violencia de Género</b>
                   </mat-panel-title>
                 </mat-expansion-panel-header>
-                <mat-checkbox [(ngModel)]="chk_g_situaciones" color="primary">¿Se han presentado situaciones de VIOLENCIA en la Colonia?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_presentado" color="primary">¿Se han presentado situaciones de VIOLENCIA en la Colonia?</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_g_tipo" color="primary">Tipos de violencia que se han presentado</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_g_recibido" color="primary">¿Ha recibido agresiones verbales en la calle o el <br />transporter público?</mat-checkbox><br />
-                <mat-checkbox [(ngModel)]="chk_g_presentado" color="primary">¿Se han presentado casos de asesinatos de mujeres en su colonia?</mat-checkbox><br />
+                <mat-checkbox [(ngModel)]="chk_g_situaciones" color="primary">¿Se han presentado casos de asesinatos de mujeres en su colonia?</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_g_programas" color="primary">Qué tanto interés tienen en participar en programas o acciones para<br /> prevenir y combatir la violencia contra las mujeres</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_g_sexo" color="primary">Sexo del entrevistado</mat-checkbox><br />
                 <mat-checkbox [(ngModel)]="chk_g_edad" color="primary">Edad del entrevistado</mat-checkbox><br />
@@ -766,13 +766,14 @@
               </mat-expansion-panel>
 
               <!--<mat-checkbox [(ngModel)]="chk_alcohol" color="primary">Estudio de Consumo de alcohol en vía pública </mat-checkbox><br />
-              <mat-checkbox [(ngModel)]="chk_comercio" color="primary">Estudio de Comercio en vía pública </mat-checkbox><br />
-              <mat-checkbox [(ngModel)]="chk_genero" color="primary">Estudio de Violencia de Género </mat-checkbox><br />
-              <mat-checkbox [(ngModel)]="chk_seguridad" color="primary">Estudio de percepción Seguridad </mat-checkbox><br />
-              <mat-checkbox [(ngModel)]="chk_per_riesgos" color="primary">Estudio de percepción de Riesgos </mat-checkbox><br />-->
+        <mat-checkbox [(ngModel)]="chk_comercio" color="primary">Estudio de Comercio en vía pública </mat-checkbox><br />
+        <mat-checkbox [(ngModel)]="chk_genero" color="primary">Estudio de Violencia de Género </mat-checkbox><br />
+        <mat-checkbox [(ngModel)]="chk_seguridad" color="primary">Estudio de percepción Seguridad </mat-checkbox><br />
+        <mat-checkbox [(ngModel)]="chk_per_riesgos" color="primary">Estudio de percepción de Riesgos </mat-checkbox><br />-->
             </mat-expansion-panel>
           </mat-expansion-panel>
         </mat-accordion>
+
 
       </div>
 
@@ -817,17 +818,17 @@
                     (dragEnd)="markerDragEnd(m, $event)">
 
           <!--<agm-info-window>
-            <strong>InfoWindow content</strong>
-          </agm-info-window>-->
+      <strong>InfoWindow content</strong>
+    </agm-info-window>-->
 
         </agm-marker>
 
         <!--<agm-circle [latitude]="markers[0].latitud" [longitude]="markers[0].longitud"
-                    [radius]="400"
-                    [fillColor]="'#37F53A'"
-                    [circleDraggable]="true"
-                    [editable]="true">
-        </agm-circle>-->
+              [radius]="400"
+              [fillColor]="'#37F53A'"
+              [circleDraggable]="true"
+              [editable]="true">
+  </agm-circle>-->
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/vc_1.kml'"> </agm-kml-layer>
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/gas_natural.kml'" *ngIf="chk_gas"> </agm-kml-layer>
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/fracturamiento_VC.kml'" *ngIf="chk_fracturamiento"> </agm-kml-layer>
@@ -837,47 +838,47 @@
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa1_lomas.kml'" *ngIf="chk_lomas"> </agm-kml-layer>
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa2_transiciones.kml'" *ngIf="chk_transicion"> </agm-kml-layer>
         <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/capa3_lacustre.kml'" *ngIf="chk_lacustre"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/poligonos_censo_2010.kml'" *ngIf="chk_vc"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml/poligonos_censo_2010_7.kml'" *ngIf="chk_vc"> </agm-kml-layer>
 
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Consumo1.kml'" *ngIf="chk_consumo"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Edad1.kml'" *ngIf="chk_edad_entre"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Via_publica.kml'" *ngIf="chk_via_public"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Frecuencia1.kml'" *ngIf="chk_frecuencia_ocurre"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Ingresos1.kml'" *ngIf="chk_ingresos"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Vecinos1.kml'" *ngIf="chk_vecinos"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Riesgos_causados1.kml'" *ngIf="chk_riesgos"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Sexo1.kml'" *ngIf="chk_sexo_entre"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Consumo6.kml'" *ngIf="chk_consumo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Edad6.kml'" *ngIf="chk_edad_entre"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Via_publica6.kml'" *ngIf="chk_via_public"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Frecuencia6.kml'" *ngIf="chk_frecuencia_ocurre"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Ingresos6.kml'" *ngIf="chk_ingresos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Vecinos6.kml'" *ngIf="chk_vecinos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Riesgos_causados6.kml'" *ngIf="chk_riesgos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_alcohol/Sexo6.kml'" *ngIf="chk_sexo_entre"> </agm-kml-layer>
 
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Hay_comercio.kml'" *ngIf="chk_c_via_publica"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Servicio_prod.kml'" *ngIf="chk_c_servicio"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Nivel_afectacion.kml'" *ngIf="chk_c_nivel"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Sexo.kml'" *ngIf="chk_c_sexo"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Edad.kml'" *ngIf="chk_c_edad"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Ingreso.kml'" *ngIf="chk_c_ingresos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Hay_comercio6.kml'" *ngIf="chk_c_via_publica"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Servicio_prod7.kml'" *ngIf="chk_c_servicio"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Nivel_afectacion6.kml'" *ngIf="chk_c_nivel"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Sexo6.kml'" *ngIf="chk_c_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Edad6.kml'" *ngIf="chk_c_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_comercio/Ingreso6.kml'" *ngIf="chk_c_ingresos"> </agm-kml-layer>
 
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Se_present.kml'" *ngIf="chk_g_situaciones"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Tipos_violencia.kml'" *ngIf="chk_g_tipo"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Ha_recibido.kml'" *ngIf="chk_g_recibido"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Se_presentado.kml'" *ngIf="chk_g_presentado"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Que_interes.kml'" *ngIf="chk_g_programas"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Sexo.kml'" *ngIf="chk_g_sexo"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Edad.kml'" *ngIf="chk_g_edad"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Ingreso1.kml'" *ngIf="chk_g_ingresos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Se_present8.kml'" *ngIf="chk_g_situaciones"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Tipos_violencia7.kml'" *ngIf="chk_g_tipo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Ha_recibido7.kml'" *ngIf="chk_g_recibido"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Se_presentado7.kml'" *ngIf="chk_g_presentado"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Que_interes7.kml'" *ngIf="chk_g_programas"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Sexo7.kml'" *ngIf="chk_g_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Edad7.kml'" *ngIf="chk_g_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_genero/Ingreso8.kml'" *ngIf="chk_g_ingresos"> </agm-kml-layer>
 
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Que_tan_segu1.kml'" *ngIf="chk_s_seguro"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Que_tanta_confian1.kml'" *ngIf="chk_s_confianza"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Frecuencia1.kml'" *ngIf="chk_s_frecuencia"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Sexo1.kml'" *ngIf="chk_s_sexo"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Edad1.kml'" *ngIf="chk_s_edad"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Ingresos1.kml'" *ngIf="chk_s_ingresos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Que_tan_segu6.kml'" *ngIf="chk_s_seguro"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Que_tanta_confian6.kml'" *ngIf="chk_s_confianza"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Frecuencia6.kml'" *ngIf="chk_s_frecuencia"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Sexo6.kml'" *ngIf="chk_s_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Edad6.kml'" *ngIf="chk_s_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_seguridad/Ingresos7.kml'" *ngIf="chk_s_ingresos"> </agm-kml-layer>
 
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Nivel_afecta.kml'" *ngIf="chk_r_nivel"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Nivel_de_Afecta.kml'" *ngIf="chk_r_efectacion"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Ha_sido.kml'" *ngIf="chk_r_evacuado"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/En_colo.kml'" *ngIf="chk_r_colonia"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Sexo.kml'" *ngIf="chk_r_sexo"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Edad.kml'" *ngIf="chk_r_edad"> </agm-kml-layer>
-        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Ingreso.kml'" *ngIf="chk_r_ingresos"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Nivel_afecta7.kml'" *ngIf="chk_r_nivel"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Nivel_de_Afecta7.kml'" *ngIf="chk_r_efectacion"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Ha_sido6.kml'" *ngIf="chk_r_evacuado"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/En_colo6.kml'" *ngIf="chk_r_colonia"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Sexo6.kml'" *ngIf="chk_r_sexo"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Edad6.kml'" *ngIf="chk_r_edad"> </agm-kml-layer>
+        <agm-kml-layer [url]="'http://mrvc.demo-minimalist.com/assets/kml_riesgo/Ingreso6.kml'" *ngIf="chk_r_ingresos"> </agm-kml-layer>
 
       </agm-map>
     </mat-sidenav-content>

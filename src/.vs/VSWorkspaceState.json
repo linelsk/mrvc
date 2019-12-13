@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app"
+    "\\app",
+    "\\app\\views",
+    "\\app\\views\\mapa"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\app\\views\\mapa\\mapa.component.html",
   "PreviewInSolutionExplorer": false
 }

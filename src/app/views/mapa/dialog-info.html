@@ -32,13 +32,19 @@
                             <div *ngIf="data.obj.type != 27">
                               <div *ngIf="data.obj.type != 14">
                                 <div *ngIf="data.obj.type != 28">
-                                  <div class="col-xs-12 margin-bottom">
-                                    <label class="label" *ngIf="data.obj.type == 21 || data.obj.type == 22 || data.obj.type == 23 || data.obj.type == 24 || data.obj.type == 25 || data.obj.type == 29; else descripcion">Actividad</label><br />
-                                    <ng-template #descripcion>
-                                      <label class="label">Descripción</label>
-                                    </ng-template>
-                                    <!--<label class="label" *ngIf="data.obj.type == 12">Dirección</label><br />-->
-                                    {{data.obj.actividad}}
+                                  <div *ngIf="data.obj.type != 6">
+                                    <div *ngIf="data.obj.type != 3">
+                                      <div *ngIf="data.obj.type != 26">
+                                        <div class="col-xs-12 margin-bottom">
+                                          <label class="label" *ngIf="data.obj.type == 21 || data.obj.type == 22 || data.obj.type == 23 || data.obj.type == 24 || data.obj.type == 25 || data.obj.type == 29; else descripcion">Actividad</label><br />
+                                          <ng-template #descripcion>
+                                            <label class="label">Descripción</label>
+                                          </ng-template>
+                                          <!--<label class="label" *ngIf="data.obj.type == 12">Dirección</label><br />-->
+                                          {{data.obj.actividad}}
+                                        </div>
+                                      </div>
+                                    </div>                                    
                                   </div>
                                 </div>
                               </div>
@@ -87,10 +93,6 @@
   </div>
   <div class="row margin-bottom">
     <div class="col-md-4">
-      <label class="label">Descripción</label><br />
-      {{data.obj.actividad}}
-    </div>
-    <div class="col-md-4">
       <label class="label">Taxonomia</label><br />
       {{data.obj.direccion}}
     </div>
@@ -98,12 +100,12 @@
       <label class="label">Intensidad</label><br />
       {{data.obj.riesgo}}
     </div>
-  </div>
-  <div class="row margin-bottom">
     <div class="col-md-4">
       <label class="label">Label</label><br />
       {{data.obj.riesgo_1}}
     </div>
+  </div>
+  <div class="row margin-bottom">   
     <div class="col-md-4">
       <label class="label">Región</label><br />
       {{data.obj.riesgo_2}}
@@ -118,7 +120,13 @@
 <div *ngIf="data.obj.type == 3">
   <div class="row margin-bottom">
     <div class="col-md-12">
-      <label class="label">Nombre:</label><br />
+      <label class="label">Uso de inmueble</label><br />
+      {{data.obj.actividad}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Nombre</label><br />
       {{data.obj.nombre}}
     </div>
   </div>
@@ -206,7 +214,7 @@
   <div class="row margin-bottom">
     <div class="col-md-12">
       <label class="label">Tipo de residuo</label><br />
-      {{data.obj.nombre}}
+      {{data.obj.riesgo}}
     </div>
   </div>
   <div class="row margin-bottom">
@@ -217,6 +225,16 @@
     <div class="col-md-6">
       <label class="label">Capacidad en toneladas</label><br />
       {{data.obj.no_personas}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-6" *ngIf="data.obj.riesgo_1 != undefined">
+      <label class="label">No. de autorización</label><br />
+      {{data.obj.riesgo_1}}
+    </div>
+    <div class="col-md-6" *ngIf="data.obj.riesgo_2 != undefined">
+      <label class="label">Teléfono</label><br />
+      {{data.obj.riesgo_2}}
     </div>
   </div>
 </div>
@@ -1008,6 +1026,12 @@
 <div *ngIf="data.obj.type == 26">
   <div class="row margin-bottom">
     <div class="col-md-12">
+      <label class="label">Uso de suelo</label><br />
+      {{data.obj.actividad}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-12">
       <label class="label">Alcaldía</label><br />
       {{data.obj.nombre}}
     </div>
@@ -1320,6 +1344,55 @@
     <div class="col-md-12">
       <label class="label">PerOcu</label><br />
       {{data.obj.no_personas}}
+    </div>
+  </div>
+</div>
+
+<div *ngIf="data.obj.type == 30">
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Fenomeno</label><br />
+      {{data.obj.nombre}}
+    </div>
+  </div>
+  <div class="row margin-bottom">
+    <div class="col-md-4">
+      <label class="label">Intensidad</label><br />
+      {{data.obj.no_personas}}
+    </div>
+
+    <div class="col-md-4">
+      <label class="label">Area Mt2</label><br />
+      {{data.obj.riesgo}}
+    </div>
+
+    <div class="col-md-4">
+      <label class="label">RPVE</label><br />
+      {{data.obj.region}}
+    </div>
+  </div>
+
+  <div class="row margin-bottom">
+    <div class="col-md-4" *ngIf="data.obj.riesgo_1 != undefined">
+      <label class="label">Cvegeo</label><br />
+      {{data.obj.riesgo_1}}
+    </div>
+
+    <div class="col-md-4">
+      <label class="label">Int2</label><br />
+      {{data.obj.riesgo_2}}
+    </div>
+
+    <div class="col-md-4">
+      <label class="label">Perimetro</label><br />
+      {{data.obj.riesgo_3}}
+    </div>
+  </div>
+
+  <div class="row margin-bottom">
+    <div class="col-md-12">
+      <label class="label">Fuente:</label><br />
+      {{data.obj.fuente}}
     </div>
   </div>
 </div>
